@@ -3,7 +3,7 @@ title: "Week 9 Worklog"
 date: "`r Sys.Date()`"
 weight: 9
 chapter: false
-pre: " <b> 1.9. </b> "
+pre: " <b> 1.9 </b> "
 ---
 
 
@@ -20,12 +20,12 @@ pre: " <b> 1.9. </b> "
 ### Tasks to be carried out this week:
 
 | Day | Task                                                                                                                                                                                                                                               | Start Date | Completion Date | Reference Material                         |
-| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------------- | ------------------------------------------ |
-| 1   | - Study Auto Scaling architecture <br>&emsp; + Review requirements and base AMI <br>&emsp; + Prepare IAM roles, security groups, and networking                                                             | 10/21/2025 | 10/21/2025       | <https://000006.awsstudygroup.com/>        |
-| 2   | - **Hands-on Part 1:** <br>&emsp; + Create Launch Template <br>&emsp; + Configure instance settings, user data, and storage                                                                                | 10/22/2025 | 10/22/2025       | <https://000006.awsstudygroup.com/>        |
-| 3   | - **Hands-on Part 2:** <br>&emsp; + Set up Application Load Balancer <br>&emsp; + Register target groups <br>&emsp; + Test application availability                                                          | 10/23/2025 | 10/23/2025       | <https://000006.awsstudygroup.com/>        |
-| 4   | - **Auto Scaling Group Deployment:** <br>&emsp; + Create ASG with scaling policies <br>&emsp; + Test scaling behavior and failover scenarios                                                                 | 10/24/2025 | 10/24/2025       | <https://000006.awsstudygroup.com/>        |
-| 5   | - **CloudWatch Workshop:** <br>&emsp; + Explore CloudWatch Metrics <br>&emsp; + Configure CloudWatch Logs <br>&emsp; + Create Alarms <br>&emsp; + Build dashboards <br>&emsp; + Cleanup resources             | 10/25/2025 | 10/25/2025       | <https://000008.awsstudygroup.com/>        |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |------------|-----------------| ------------------------------------------ |
+| 1   | - Study Auto Scaling architecture <br>&emsp; + Review requirements and base AMI <br>&emsp; + Prepare IAM roles, security groups, and networking                                                             | 03/11/2025 | 03/11/2025      | <https://000006.awsstudygroup.com/>        |
+| 2   | - **Hands-on Part 1:** <br>&emsp; + Create Launch Template <br>&emsp; + Configure instance settings, user data, and storage                                                                                | 04/11/2025 | 04/11/2025      | <https://000006.awsstudygroup.com/>        |
+| 3   | - **Hands-on Part 2:** <br>&emsp; + Set up Application Load Balancer <br>&emsp; + Register target groups <br>&emsp; + Test application availability                                                          | 05/11/2025 | 05/11/2025      | <https://000006.awsstudygroup.com/>        |
+| 4   | - **Auto Scaling Group Deployment:** <br>&emsp; + Create ASG with scaling policies <br>&emsp; + Test scaling behavior and failover scenarios                                                                 | 06/11/2025 | 06/11/2025      | <https://000006.awsstudygroup.com/>        |
+| 5   | - **CloudWatch Workshop:** <br>&emsp; + Explore CloudWatch Metrics <br>&emsp; + Configure CloudWatch Logs <br>&emsp; + Create Alarms <br>&emsp; + Build dashboards <br>&emsp; + Cleanup resources             | 07/11/2025 | 07/11/2025      | <https://000008.awsstudygroup.com/>        |
 
 ---
 

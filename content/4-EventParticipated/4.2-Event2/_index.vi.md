@@ -3,137 +3,239 @@ title: "Event 2"
 date: "`r Sys.Date()`"
 weight: 1
 chapter: false
-pre: " <b> 4.2. </b> "
+pre: " <b> 4.2 </b> "
 ---
 
-# Bài thu hoạch “AWS Cloud Mastery Series #2 workshop”
+# Bài thu hoạch: “AWS Cloud Mastery Series #2 – DevOps on AWS”
 
-### Mục Đích Của Sự Kiện
+---
 
-- Trang bị tư duy DevOps hiện đại và cách áp dụng trên hệ sinh thái AWS.
-- Hướng dẫn triển khai CI/CD, IaC, container orchestration, và monitoring đúng chuẩn AWS.
-- Tối ưu tốc độ phát triển, chất lượng release và độ tin cậy của hệ thống.
-### Danh Sách Diễn Giả
+##  Mục Đích Của Sự Kiện
 
-- **FCJ Team** 
-- **Kha Van** - Cloud Security Engineer
-- **AWS Developer Advocate Team**
+- Giới thiệu về các dịch vụ **DevOps trên AWS** và cách thiết kế **pipeline CI/CD**.  
+- Trang bị **tư duy DevOps hiện đại** và cách áp dụng trên hệ sinh thái AWS.  
+- Khám phá các khái niệm về **Infrastructure as Code (IaC)** và các công cụ liên quan (CloudFormation, CDK, Terraform).  
+- Trình bày tổng quan về các **workload dạng container** trên AWS (ECR, ECS, EKS, App Runner).  
+- Minh họa cách đạt được **giám sát và quan sát (monitoring & observability)** hiệu quả bằng các dịch vụ gốc của AWS.  
+- Tối ưu **tốc độ phát triển, chất lượng release và độ tin cậy** của hệ thống.
 
-### Nội Dung Nổi Bật
+---
 
-#### AWS DevOps Services – CI/CD Pipeline
+##  Danh Sách Diễn Giả
 
-- **Build**: tối ưu `buildspec.yml` (build caching & parallel test).
-- **Demo**: pipeline end-to-end — Commit → Build → Test → Deploy → Monitor.
-- **Deployment**: phải tự động hóa 100% — không click-ops (no manual deployments).
+- **Trương Quang Tình** – AWS Community Builder, Platform Engineer (TymeX)  
+- **Bảo Huỳnh** – AWS Community Builder  
+- **Nguyễn Khánh Phúc Thịnh** – AWS Community Builder  
+- **Trần Đại Vĩ** – AWS Community Builder  
+- **Huỳnh Hoàng Long** – AWS Community Builder  
+- **Phạm Hoàng Quý** – AWS Community Builder  
+- **Nghiêm Lê** – AWS Community Builder  
+- **Đinh Lê Hoàng Anh** – Cloud Engineer Trainee, First Cloud AI Journey  
 
-#### Infrastructure as Code
+(Cùng với các anh/chị trong **FCJ Team**, **AWS Developer Advocate Team** và khách mời cộng đồng.)
 
-- **Tools:** `CloudFormation` / `Terraform` / `CDK` — dùng để triển khai hạ tầng (CloudFormation là dịch vụ quản lý của AWS).
-- **Template anatomy (YAML):** `Resources` → `Parameters` → `Outputs` → `Mappings`.
-- **CDK model:** Constructs → Stacks → Apps. Hỗ trợ nhiều ngôn ngữ (TypeScript, Python, Java...).
-- **Benefits:** dễ reuse, dễ modular hóa, dễ test.
-- **When to choose:**
-    - **CloudFormation:** declarative, phù hợp teams enterprise.
-    - **CDK:** developer-friendly, phù hợp Agile teams.
+---
 
-> “Không IaC = không DevOps.”
-#### Container Services on AWS
+#  Nội Dung Nổi Bật
 
-- **Docker fundamentals**
-    - `Dockerfile` → Build → Image → Registry → Run container
-    - Registry: Docker Hub hoặc **Amazon ECR**
-- **Amazon ECR**
-    - Image scanning, lifecycle policies, permissions per repository
-- **Amazon ECS**
-    - Chạy container với **Fargate** hoặc **EC2**
-    - Application Load Balancer, auto-scaling theo CPU, memory, queue length
-- **Amazon EKS**
-    - Managed Kubernetes service
-    - Use cases: large-scale, multi-team, portable workloads
-- **AWS App Runner**
-    - Dành cho teams muốn “deploy container như deploy Vercel”
->Case study: So sánh `ECS`, `EKS`, `App Runner` cho microservices, “Containers = scalability + portability. ECS/EKS giúp production hoạt động trơn tru.”
+##  Xây dựng nền tảng tư duy DevOps
 
-#### Monitoring & Observability
+Các diễn giả nhấn mạnh: **DevOps không chỉ là job title** mà là **tư duy + thói quen làm việc**:
 
-- **CloudWatch**
-    - Metrics, Logs, Dashboards
-    - Composite alarms
-    - Custom metrics cho business KPIs
+- Tự động hóa (automation) các tác vụ lặp đi lặp lại.  
+- Chia sẻ kiến thức giữa các vai trò (Dev, Ops, QA, Security…).  
+- Liên tục thử nghiệm, học hỏi và cải tiến (continuous learning).  
+- Quyết định dựa trên **số liệu đo lường được**, không chỉ dựa vào cảm tính.  
 
-- **AWS X-Ray**
-    - Distributed tracing
-    - Debug latency, bottlenecks, service maps
+Những lỗi phổ biến của người mới:
 
-- **Best practices**
-    - Thiết kế alerting để tránh noise
-    - On-call workflow và runbook rõ ràng
-    - Giám sát theo Golden Signals: Latency, Traffic, Errors, Saturation
+- Chỉ “đi theo tutorial” mà không tự làm dự án thực tế.  
+- Quá so sánh bản thân với người khác thay vì tập trung vào **tiến bộ nhỏ nhưng đều đặn**.  
 
-> “Không observability = không biết hệ thống đang chết như thế nào.”
+Thông điệp lặp lại nhiều lần:  
+> *Không có CI/CD → không có DevOps.*  
+> *Không IaC → không DevOps.*
 
-### Những Gì Học Được
+---
 
-#### Tư Duy DevOps Hiện Đại
+##  Infrastructure as Code (IaC)
 
-- Tập trung vào **outcome**, không phải tools.
-- **DORA metrics**: tiêu chuẩn đo hiệu suất phần mềm.
-- Continuous Integration → Continuous Delivery → Continuous Learning.
+Các công cụ/approach được so sánh và phân tích:
 
-#### Kiến Trúc Kỹ Thuật Quan Trọng
+- **CloudFormation**  
+  - Dịch vụ gốc của AWS, mô hình khai báo (declarative).  
+  - Phù hợp cho nhiều team enterprise, muốn sử dụng dịch vụ native.  
 
-- **CI/CD (AWS)**: CodePipeline, CodeBuild, CodeDeploy — thiết kế pipeline theo chuẩn.
-- **IaC** là xương sống của automation (CloudFormation / Terraform / CDK).
-- **Containerization** giúp microservices scale và di động.
-- **Observability**: phát hiện lỗi nhanh, giảm MTTR bằng metrics, logs và tracing.
+- **AWS CDK**  
+  - Cho phép định nghĩa hạ tầng bằng ngôn ngữ lập trình (TypeScript, Python, Java,…).  
+  - Mô hình: **Constructs → Stacks → Apps**.  
+  - Dễ modular hóa, tái sử dụng, test, phù hợp Agile teams / developer-friendly.
 
-#### Chiến Lược DevOps
+- **Terraform**  
+  - Phù hợp multi-cloud / hybrid.  
+  - Quản lý state file, hỗ trợ nhiều provider.  
 
-- Bắt đầu từ small pipeline → mở rộng dần.
-- Dùng **blue/green** và **canary** để giảm rủi ro khi deploy.
-- Áp dụng **IaC + GitOps** cho môi trường multi-team.
+Các khái niệm được giải thích bằng ví dụ thực tế:
 
-### Ứng Dụng Vào Công Việc
+- Stack, Construct, State file, template YAML (Resources, Parameters, Outputs, Mappings)…  
 
-- Xây dựng CI/CD cho các dự án backend/web (CodePipeline / CodeBuild / CodeDeploy).
-- Đóng gói service bằng Docker và deploy lên `ECS` (Fargate) hoặc `App Runner`.
-- Sử dụng `CDK` để build hạ tầng AWS thay vì thao tác thủ công trên console.
-- Quan sát hệ thống bằng CloudWatch (dashboards, alarms, custom metrics).
-- Thiết lập incident workflow cho dự án: alert → investigate → fix → postmortem (runbooks & on-call).
+**Thông điệp quan trọng:**
 
-### Trải nghiệm trong event
+- Hạ tầng được định nghĩa bằng IaC sẽ **nhất quán, có version control, dễ review, dễ rollback** hơn rất nhiều so với cấu hình thủ công bằng click-ops.
 
-- Tham gia workshop **“AWS Cloud Mastery Series #2”** là một trải nghiệm rất bổ ích, giúp tôi có thêm tư duy của 1 DevOps cần có.
+---
 
-#### Học hỏi từ các diễn giả có chuyên môn cao
+##  AWS DevOps Services – CI/CD Pipeline
 
-- Hiểu chi tiết cách AWS xử lý incident & detection thực tế.
+Nội dung xoay quanh cách xây dựng pipeline chuẩn AWS:
 
-#### Trải nghiệm kỹ thuật thực tế
+- **CI/CD với AWS:**
+  - **CodePipeline** – orchestration cho toàn bộ pipeline.  
+  - **CodeBuild** – build, test, lint, static analysis (buildspec.yml, build caching, parallel tests).  
+  - **CodeDeploy** – triển khai ứng dụng (blue/green, canary, rolling).  
 
-- Demo pipeline từ commit → deploy live.
-- Demo drift detection, CDK synth/deploy.
-- Triển khai container real-time trên ECS/ECR.
+- **Demo pipeline end-to-end:**
+  - Commit → Build → Test → Deploy → Monitor.  
+  - Nhấn mạnh: **deployment phải tự động hóa 100%**, không “click deploy” thủ công trên console.
 
-#### Ứng dụng công cụ hiện đại
+- **Chiến lược DevOps:**
+  - Bắt đầu từ **small pipeline**, sau đó mở rộng dần.  
+  - Dùng **blue/green** và **canary deployment** để giảm rủi ro.  
+  - Kết hợp **IaC + GitOps** cho môi trường nhiều team.
 
-- CloudFormation + CDK giúp IaC rõ ràng, lặp lại được.
-- ECR scanning tăng bảo mật.
-- X-Ray giúp debug microservices dễ dàng.
+---
 
-#### Kết nối và tư duy
+##  Container và mô hình triển khai trên AWS
 
-- Hiểu rõ cách teamwork Dev/Product/DevOps phối hợp trong CI/CD pipeline.
-- Tư duy “automate everything” ăn sâu hơn.
+### Docker fundamentals
 
-#### Bài học rút ra
+- **Dockerfile → Build → Image → Registry → Run container**  
+- Registry: **Docker Hub** hoặc **Amazon ECR**
 
-- Không có CI/CD → không có DevOps.
-- IaC là điều kiện tiên quyết.
-- Containers → scalability + speed.
-- Observability → reliability.
+### Amazon ECR
 
-#### Một số hình ảnh khi tham gia sự kiện
-![Sự kiện](/images/4-EventParticipated/29.11-event.jpg)
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy DevOps, tự động hóa quy trình phát triển phần mềm và cải thiện hợp tác giữa các nhóm.
+- Lưu trữ container image.  
+- Hỗ trợ **image scanning**, lifecycle policies, phân quyền theo repository.
+
+### Amazon ECS
+
+- Orchestrate container với **Fargate** hoặc **EC2**.  
+- Tích hợp **Application Load Balancer**, autoscaling theo CPU, memory, queue length.  
+
+### Amazon EKS
+
+- **Managed Kubernetes service** trên AWS.  
+- Phù hợp với **large-scale, multi-team**, yêu cầu portability, cần K8s ecosystem.
+
+### AWS App Runner
+
+- Dịch vụ “deploy container như deploy lên Vercel/Netlify” cho backend/web.  
+- Phù hợp team muốn **giảm tối đa việc quản lý hạ tầng / cluster**.
+
+**Case study & so sánh ECS, EKS, App Runner:**
+
+- ECS: dễ dùng, native AWS, phù hợp đa số workload container trên AWS.  
+- EKS: tối ưu khi đã dùng K8s hoặc cần multi-cloud portability.  
+- App Runner: phù hợp team nhỏ, startup, feature team muốn tập trung vào code.
+
+---
+
+##  Monitoring & Observability
+
+Phần này tập trung vào **CloudWatch** và **X-Ray**:
+
+### Amazon CloudWatch
+
+- Thu thập **Metrics, Logs, Dashboards**.  
+- Composite alarms, log filters, custom metrics cho business KPIs.  
+
+### AWS X-Ray
+
+- **Distributed tracing**: vẽ service map, trace end-to-end request.  
+- Rất hữu ích để debug **latency, bottlenecks** trong microservices.  
+
+**Best practices:**
+
+- Thiết kế alert hợp lý để tránh “alert noise”.  
+- Xây dựng **on-call workflow và runbook** rõ ràng.  
+- Dựa vào **Golden Signals**: Latency, Traffic, Errors, Saturation.  
+
+Thông điệp được nhấn mạnh:  
+> *Không observability = không biết hệ thống đang chết như thế nào.*
+
+---
+
+#  Những Gì Học Được
+
+- DevOps **không chỉ là chức danh** mà là tư duy + tập hợp thói quen: automation, sharing, measurable outcomes.  
+- **IaC** giúp hạ tầng:
+  - Nhất quán  
+  - Có thể lặp lại  
+  - Dễ bảo trì, dễ audit, dễ rollback  
+- Lựa chọn công cụ IaC (CloudFormation / CDK / Terraform) phải dựa trên:
+  - Nhu cầu đội nhóm  
+  - Yêu cầu dự án  
+  - Mức độ phức tạp & môi trường (AWS-only hay multi-cloud).  
+- Hiểu rõ sự khác biệt giữa các dịch vụ container (ECR, ECS, EKS, App Runner) giúp:
+  - Chọn đúng dịch vụ cho đúng loại workload.  
+- **Monitoring & Observability** không phải “add-on cuối cùng” mà phải được thiết kế **ngay từ đầu**.  
+- Nắm thêm nhiều khái niệm như:
+  - **DORA metrics**, CI → CD → Continuous Learning  
+  - Blue/green, canary deployment  
+  - GitOps, incident workflow, MTTR…
+
+---
+
+#  Ứng Dụng Vào Công Việc
+
+### Ví dụ: Dự án Chatbot AI trên AWS
+
+Nếu có cơ hội xây dựng một **Chatbot AI trên AWS**, tôi dự định áp dụng:
+
+- **Thiết kế pipeline CI/CD:**
+  - Dùng **CodePipeline + CodeBuild + CodeDeploy** để tự động hóa build, test, deploy.  
+  - Mỗi lần commit code cho chatbot (backend, Lambda, API) đều được test và deploy tự động.  
+
+- **Infrastructure as Code:**
+  - Dùng **AWS CDK** để định nghĩa toàn bộ hạ tầng:  
+    - Lambda, API Gateway, DynamoDB, S3, IAM, EventBridge,…  
+  - Mọi thứ được version control trên Git, dễ tái sử dụng và mở rộng.
+
+- **Container hóa & triển khai:**
+  - Đóng gói một số service (ví dụ: RAG API, vector DB interface) thành Docker image.  
+  - Deploy lên **ECS (Fargate)** hoặc **App Runner** tùy nhu cầu scale.
+
+- **Monitoring & Incident handling:**
+  - Dùng **CloudWatch metrics + logs + dashboards** để quan sát chatbot.  
+  - Áp dụng **X-Ray** nếu kiến trúc là microservices.  
+  - Thiết lập **incident workflow**: alert → investigate → fix → postmortem (runbook, on-call).
+
+Nhờ áp dụng DevOps + AWS, hệ thống chatbot AI có thể:
+
+- Phát triển nhanh hơn (dev velocity cao).  
+- Triển khai thường xuyên nhưng vẫn an toàn.  
+- Dễ bảo trì, dễ mở rộng khi lượng người dùng tăng.
+
+---
+
+#  Trải Nghiệm Sự Kiện
+
+- Sự kiện giúp tôi có cái nhìn **thực tế hơn** về cách các tổ chức hiện đại triển khai DevOps trên AWS.  
+- Các diễn giả không chỉ nói lý thuyết mà còn chia sẻ **rất nhiều ví dụ thật**, từ IaC, CI/CD đến container orchestration.  
+- Được xem demo:
+  - Pipeline từ **commit → deploy live**.  
+  - **Drift detection**, `cdk synth/deploy`.  
+  - Triển khai container real-time trên **ECS/ECR**.  
+- Cơ hội **kết nối với các bạn cùng chí hướng**, trao đổi kinh nghiệm học DevOps, AWS, Cloud.  
+
+### Bài học rút ra
+
+- **Không có CI/CD → không có DevOps.**  
+- **IaC là điều kiện tiên quyết** để automation thực sự hiệu quả.  
+- **Containers = scalability + portability + speed**.  
+- **Observability = reliability** – nếu không quan sát được, không thể tin hệ thống sẽ sống khỏe trong production.  
+
+> Tổng kết lại, “AWS Cloud Mastery Series #2 – DevOps on AWS” không chỉ giúp tôi nắm vững khái niệm DevOps trên lý thuyết, mà còn định hình rõ hơn cách xây dựng hệ thống **tự động hóa – có thể mở rộng – dễ quan sát** trên AWS, từ đó tạo nền tảng vững chắc cho các dự án Cloud & DevOps trong tương lai.
+
+## Một số hình ảnh khi tham gia sự kiện
+![ws Image](/images/ws2.png)

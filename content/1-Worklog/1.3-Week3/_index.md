@@ -3,7 +3,7 @@ title: "Week 3 Worklog"
 date: "2025-09-23"
 weight: 3
 chapter: false
-pre: " <b> 1.3. </b> "
+pre: " <b> 1.3 </b> "
 ---
 
 ### Week 3 Objectives:
@@ -20,11 +20,11 @@ pre: " <b> 1.3. </b> "
 
 | Day | Task                                                                                                                                                                                                                                           | Start Date | Completion Date | Reference Material                         |
 | --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------------- | ------------------------------------------ |
-| 1   | - Study IAM access control overview <br>&emsp; + IAM Users & IAM Groups <br>&emsp; + IAM Policies <br>&emsp; + IAM Roles <br> - Review security objectives and principle of least privilege                                                     | 09/23/2025 | 09/23/2025       | <https://000002.awsstudygroup.com/>        |
-| 2   | - **Hands-on IAM (1):** <br>&emsp; + Create Admin IAM Group <br>&emsp; + Create Admin User and add to group <br>&emsp; + Login as Admin User and verify permissions                                                                           | 09/24/2025 | 09/24/2025       | <https://000002.awsstudygroup.com/>        |
-| 3   | - **Hands-on IAM (2):** <br>&emsp; + Create Admin Role <br>&emsp; + Create OperatorUser <br>&emsp; + Configure trust relationships for role switching <br>&emsp; + Test “Switch Role” from OperatorUser <br>&emsp; + Review and clean up config | 09/25/2025 | 09/25/2025       | <https://000002.awsstudygroup.com/>        |
-| 4   | - Study Amazon VPC fundamentals: <br>&emsp; + Subnets <br>&emsp; + Route Tables <br>&emsp; + Internet Gateway <br>&emsp; + NAT Gateway <br> - Learn VPC security components: <br>&emsp; + Security Groups <br>&emsp; + Network ACLs             | 09/26/2025 | 09/26/2025       | <https://000003.awsstudygroup.com/>        |
-| 5   | - **Hands-on VPC & Networking:** <br>&emsp; + Create VPC, Subnets, Internet Gateway, Route Tables, Security Groups <br>&emsp; + Enable VPC Flow Logs <br>&emsp; + Launch EC2 instance in VPC and test connectivity <br>&emsp; + Read through Site-to-Site VPN setup steps | 09/27/2025 | 09/27/2025       | <https://000003.awsstudygroup.com/>        |
+| 1   | - Study IAM access control overview <br>&emsp; + IAM Users & IAM Groups <br>&emsp; + IAM Policies <br>&emsp; + IAM Roles <br> - Review security objectives and principle of least privilege                                                     | 23/09/2025  | 23/09/2025        | <https://000002.awsstudygroup.com/>        |
+| 2   | - **Hands-on IAM (1):** <br>&emsp; + Create Admin IAM Group <br>&emsp; + Create Admin User and add to group <br>&emsp; + Login as Admin User and verify permissions                                                                           | 24/09/2025 | 24/09/2025       | <https://000002.awsstudygroup.com/>        |
+| 3   | - **Hands-on IAM (2):** <br>&emsp; + Create Admin Role <br>&emsp; + Create OperatorUser <br>&emsp; + Configure trust relationships for role switching <br>&emsp; + Test “Switch Role” from OperatorUser <br>&emsp; + Review and clean up config | 25/09/2025 | 25/09/2025       | <https://000002.awsstudygroup.com/>        |
+| 4   | - Study Amazon VPC fundamentals: <br>&emsp; + Subnets <br>&emsp; + Route Tables <br>&emsp; + Internet Gateway <br>&emsp; + NAT Gateway <br> - Learn VPC security components: <br>&emsp; + Security Groups <br>&emsp; + Network ACLs             | 26/09/2025 | 26/09/2025       | <https://000003.awsstudygroup.com/>        |
+| 5   | - **Hands-on VPC & Networking:** <br>&emsp; + Create VPC, Subnets, Internet Gateway, Route Tables, Security Groups <br>&emsp; + Enable VPC Flow Logs <br>&emsp; + Launch EC2 instance in VPC and test connectivity <br>&emsp; + Read through Site-to-Site VPN setup steps | 27/09/2025  | 27/09/2025        | <https://000003.awsstudygroup.com/>        |
 
 ---
 

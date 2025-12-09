@@ -3,7 +3,7 @@ title: "Nhật ký Tuần 2"
 date: "2025-09-15"
 weight: 2
 chapter: false
-pre: " <b> 1.2. </b> "
+pre: " <b> 1.2 </b> "
 ---
 
 ### Mục tiêu Tuần 2:
@@ -20,11 +20,11 @@ pre: " <b> 1.2. </b> "
 
 | Ngày | Nhiệm vụ                                                                                                                                                                                                                                  | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo                         |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | ---------------- | ------------------------------------------ |
-| 1   | - Tìm hiểu tổng quan về **AWS Budgets** <br>&emsp; + AWS Budgets là gì? <br>&emsp; + Tại sao sử dụng budgets để kiểm soát chi phí? <br>&emsp; + Các loại budgets (Cost, Usage, RI, Savings Plans)                                         | 09/15/2025   | 09/15/2025       | <https://000007.awsstudygroup.com/>        |
-| 2   | - **Thực hành với Budgets (1):** <br>&emsp; + Tạo Budget bằng Template <br>&emsp; + Tạo Cost Budget với các ngưỡng cảnh báo (alert thresholds) <br>&emsp; + Xem chi tiết budget và cấu hình thông báo                                    | 09/16/2025   | 09/16/2025       | <https://000007.awsstudygroup.com/>        |
-| 3   | - **Thực hành với Budgets (2):** <br>&emsp; + Tạo Usage Budget cho một dịch vụ cụ thể (ví dụ: EC2) <br>&emsp; + Tạo RI Budget <br>&emsp; + Hiểu khi nào nên sử dụng từng loại budget                                                     | 09/17/2025   | 09/17/2025       | <https://000007.awsstudygroup.com/>        |
-| 4   | - **Thực hành với Budgets (3):** <br>&emsp; + Tạo Savings Plans Budget <br>&emsp; + Xem các cảnh báo và ví dụ về kịch bản vượt chi phí (cost overrun) <br>&emsp; + Dọn dẹp budgets và các tài nguyên liên quan sau khi hoàn thành lab | 09/18/2025   | 09/18/2025       | <https://000007.awsstudygroup.com/>        |
-| 5   | - Tìm hiểu **AWS Support**: <br>&emsp; + Các gói AWS Support và sự khác nhau giữa chúng <br>&emsp; + Cách truy cập AWS Support Center <br> - **Thực hành:** <br>&emsp; + Điều hướng đến Support Center <br>&emsp; + Tạo một support case <br>&emsp; + Xem / cập nhật / đóng yêu cầu hỗ trợ | 09/19/2025   | 09/19/2025       | <https://000009.awsstudygroup.com/>        |
+| 1   | - Tìm hiểu tổng quan về **AWS Budgets** <br>&emsp; + AWS Budgets là gì? <br>&emsp; + Tại sao sử dụng budgets để kiểm soát chi phí? <br>&emsp; + Các loại budgets (Cost, Usage, RI, Savings Plans)                                         | 15/09/2025   | 15/09/2025        | <https://000007.awsstudygroup.com/>        |
+| 2   | - **Thực hành với Budgets (1):** <br>&emsp; + Tạo Budget bằng Template <br>&emsp; + Tạo Cost Budget với các ngưỡng cảnh báo (alert thresholds) <br>&emsp; + Xem chi tiết budget và cấu hình thông báo                                    | 16/09/2025   | 16/09/2025      | <https://000007.awsstudygroup.com/>        |
+| 3   | - **Thực hành với Budgets (2):** <br>&emsp; + Tạo Usage Budget cho một dịch vụ cụ thể (ví dụ: EC2) <br>&emsp; + Tạo RI Budget <br>&emsp; + Hiểu khi nào nên sử dụng từng loại budget                                                     | 17/09/2025   | 17/09/2025     | <https://000007.awsstudygroup.com/>        |
+| 4   | - **Thực hành với Budgets (3):** <br>&emsp; + Tạo Savings Plans Budget <br>&emsp; + Xem các cảnh báo và ví dụ về kịch bản vượt chi phí (cost overrun) <br>&emsp; + Dọn dẹp budgets và các tài nguyên liên quan sau khi hoàn thành lab | 18/09/2025   | 18/09/2025       | <https://000007.awsstudygroup.com/>        |
+| 5   | - Tìm hiểu **AWS Support**: <br>&emsp; + Các gói AWS Support và sự khác nhau giữa chúng <br>&emsp; + Cách truy cập AWS Support Center <br> - **Thực hành:** <br>&emsp; + Điều hướng đến Support Center <br>&emsp; + Tạo một support case <br>&emsp; + Xem / cập nhật / đóng yêu cầu hỗ trợ | 19/09/2025   | 19/09/2025       | <https://000009.awsstudygroup.com/>        |
 
 ---
 

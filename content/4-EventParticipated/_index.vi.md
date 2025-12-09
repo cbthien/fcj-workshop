@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-### [Event 1](4.1-Event1/)
+### Event 1
 
 &emsp;**Tên sự kiện:** AWS Cloud Mastery Series #1 workshop (AI/ML/GenAI)
 
@@ -18,7 +18,7 @@ pre: " <b> 4. </b> "
 
 &emsp;**Nội dung chính:** Amazon SageMaker, Generative AI with Amazon Bedrock, Bedrock Agents, MLOps, CI/CD workflow for containers
 
-### [Event 2](4.2-Event2/)
+### Event 2
 
 &emsp;**Tên sự kiện:** AWS Cloud Mastery Series #2 workshop (DevOps)
 
@@ -30,7 +30,7 @@ pre: " <b> 4. </b> "
 
 &emsp;**Nội dung chính:** Tư duy DevOps hiện đại, CI/CD Pipeline, Infrastructure as Code (IaC), Container Services (ECS/EKS/App Runner), Monitoring & Observability
 
-### [Event 3](4.3-Event3/)
+### Event 3
 
 &emsp;**Tên sự kiện:** AWS Cloud Mastery Series #3 workshop (Security Pillar)
 

@@ -1,9 +1,9 @@
 ---
 title: "Worklog Tuần 9"
 date: "`r Sys.Date()`"
-weight: 1
+weight: 9
 chapter: false
-pre: " <b> 1.9. </b> "
+pre: " <b> 1.9 </b> "
 ---
 
 ### Mục tiêu Tuần 9:
@@ -19,11 +19,11 @@ pre: " <b> 1.9. </b> "
 
 | Ngày | Nhiệm vụ                                                                                                                                                                                                                                         | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo                         |
 | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | ---------------- | ------------------------------------------ |
-| 1    | - Tìm hiểu kiến trúc Auto Scaling <br>&emsp; + Chuẩn bị IAM, security group, AMI và mạng                                                                                                                 | 10/21/2025   | 10/21/2025       | <https://000006.awsstudygroup.com/>        |
-| 2    | - **Thực hành Phần 1:** <br>&emsp; + Tạo Launch Template <br>&emsp; + Cấu hình user data, storage, instance settings                                                                                    | 10/22/2025   | 10/22/2025       | <https://000006.awsstudygroup.com/>        |
-| 3    | - **Thực hành Phần 2:** <br>&emsp; + Tạo Application Load Balancer <br>&emsp; + Tạo target group và kiểm tra hoạt động của ứng dụng                                                                      | 10/23/2025   | 10/23/2025       | <https://000006.awsstudygroup.com/>        |
-| 4    | - **Triển khai Auto Scaling Group:** <br>&emsp; + Tạo ASG và policy mở rộng <br>&emsp; + Kiểm thử scaling khi tải tăng/giảm                                                                              | 10/24/2025   | 10/24/2025       | <https://000006.awsstudygroup.com/>        |
-| 5    | - **Workshop CloudWatch:** <br>&emsp; + Tìm hiểu Metrics <br>&emsp; + Thu thập Logs <br>&emsp; + Tạo Alarms <br>&emsp; + Tạo Dashboards <br>&emsp; + Cleanup tài nguyên                                  | 10/25/2025   | 10/25/2025       | <https://000008.awsstudygroup.com/>        |
+| 1    | - Tìm hiểu kiến trúc Auto Scaling <br>&emsp; + Chuẩn bị IAM, security group, AMI và mạng                                                                                                                 | 03/11/2025  | 03/11/2025      | <https://000006.awsstudygroup.com/>        |
+| 2    | - **Thực hành Phần 1:** <br>&emsp; + Tạo Launch Template <br>&emsp; + Cấu hình user data, storage, instance settings                                                                                    | 04/11/2025   | 04/11/2025      | <https://000006.awsstudygroup.com/>        |
+| 3    | - **Thực hành Phần 2:** <br>&emsp; + Tạo Application Load Balancer <br>&emsp; + Tạo target group và kiểm tra hoạt động của ứng dụng                                                                      | 05/11/2025   | 05/11/2025       | <https://000006.awsstudygroup.com/>        |
+| 4    | - **Triển khai Auto Scaling Group:** <br>&emsp; + Tạo ASG và policy mở rộng <br>&emsp; + Kiểm thử scaling khi tải tăng/giảm                                                                              | 06/11/2025   | 06/11/2025       | <https://000006.awsstudygroup.com/>        |
+| 5    | - **Workshop CloudWatch:** <br>&emsp; + Tìm hiểu Metrics <br>&emsp; + Thu thập Logs <br>&emsp; + Tạo Alarms <br>&emsp; + Tạo Dashboards <br>&emsp; + Cleanup tài nguyên                                  | 07/11/2025    | 07/11/2025       | <https://000008.awsstudygroup.com/>        |
 
 ---
 

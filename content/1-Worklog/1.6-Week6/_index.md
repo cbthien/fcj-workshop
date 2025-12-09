@@ -3,7 +3,7 @@ title: "Week 6 Worklog"
 date: "2025-10-14"
 weight: 6
 chapter: false
-pre: " <b> 1.6. </b> "
+pre: " <b> 1.6 </b> "
 ---
 
 ### Week 6 Objectives:
@@ -19,12 +19,12 @@ pre: " <b> 1.6. </b> "
 ### Tasks to be carried out this week:
 
 | Day | Task                                                                                                                                                                                                                                            | Start Date | Completion Date | Reference Material                         |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | ---------------- | ------------------------------------------ |
-| 1   | - Study RDS overview & prerequisites <br>&emsp; + Supported engines <br>&emsp; + VPC design for RDS (public EC2 → private RDS)                                                                            | 10/14/2025 | 10/14/2025       | <https://000005.awsstudygroup.com/>        |
-| 2   | - **Hands-on RDS:** <br>&emsp; + Launch EC2 instance in public subnet <br>&emsp; + Create RDS MySQL instance in private subnet <br>&emsp; + Configure security groups for connectivity                    | 10/15/2025 | 10/15/2025       | <https://000005.awsstudygroup.com/>        |
-| 3   | - **Application Deployment:** <br>&emsp; + Deploy application that queries the RDS database <br>&emsp; + Test CRUD operations through EC2                                                                  | 10/16/2025 | 10/16/2025       | <https://000005.awsstudygroup.com/>        |
-| 4   | - **Lightsail Workshop – Part 1:** <br>&emsp; + Deploy database on Lightsail <br>&emsp; + Deploy WordPress, Prestashop, and Akaunting instances                                                            | 10/17/2025 | 10/17/2025       | <https://000045.awsstudygroup.com/>        |
-| 5   | - **Lightsail Workshop – Part 2:** <br>&emsp; + Configure application security <br>&emsp; + Create snapshots <br>&emsp; + Upgrade to larger instance <br>&emsp; + Create CloudWatch alarms <br>&emsp; + Resource cleanup | 10/18/2025 | 10/18/2025       | <https://000045.awsstudygroup.com/>        |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |------------| ---------------- | ------------------------------------------ |
+| 1   | - Study RDS overview & prerequisites <br>&emsp; + Supported engines <br>&emsp; + VPC design for RDS (public EC2 → private RDS)                                                                            | 13/10/2025 | 13/10/2025       | <https://000005.awsstudygroup.com/>        |
+| 2   | - **Hands-on RDS:** <br>&emsp; + Launch EC2 instance in public subnet <br>&emsp; + Create RDS MySQL instance in private subnet <br>&emsp; + Configure security groups for connectivity                    | 14/10/2025  | 14/10/2025        | <https://000005.awsstudygroup.com/>        |
+| 3   | - **Application Deployment:** <br>&emsp; + Deploy application that queries the RDS database <br>&emsp; + Test CRUD operations through EC2                                                                  | 15/10/2025  | 15/10/2025      | <https://000005.awsstudygroup.com/>        |
+| 4   | - **Lightsail Workshop – Part 1:** <br>&emsp; + Deploy database on Lightsail <br>&emsp; + Deploy WordPress, Prestashop, and Akaunting instances                                                            | 16/10/2025 | 16/10/2025      | <https://000045.awsstudygroup.com/>        |
+| 5   | - **Lightsail Workshop – Part 2:** <br>&emsp; + Configure application security <br>&emsp; + Create snapshots <br>&emsp; + Upgrade to larger instance <br>&emsp; + Create CloudWatch alarms <br>&emsp; + Resource cleanup | 17/10/2025 | 17/10/2025       | <https://000045.awsstudygroup.com/>        |
 
 ---
 

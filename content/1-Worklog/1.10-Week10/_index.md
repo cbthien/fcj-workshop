@@ -3,7 +3,7 @@ title: "Week 10 Worklog"
 date: "`r Sys.Date()`"
 weight: 10
 chapter: false
-pre: " <b> 1.10. </b> "
+pre: " <b> 1.10 </b> "
 ---
 ### Week 10 Objectives
 
@@ -17,12 +17,12 @@ pre: " <b> 1.10. </b> "
 ### Tasks to be carried out this week
 
 | Day | Task | Start Date | Completion Date | Reference |
-| --- | ---- | ----------- | ---------------- | --------- |
-| 1 | - Introduction to AWS CLI <br> - Supported command environments (Linux/macOS/Windows/Remote) <br> - Create and understand CLI profiles <br> - Configure AWS CLI using `aws configure` | 10/28/2025 | 10/28/2025 | https://000011.awsstudygroup.com/ |
-| 2 | - Install AWS CLI <br> - View AWS resources using CLI <br> - Interact with Amazon S3 via CLI (list buckets, upload/download objects) | 10/29/2025 | 10/29/2025 | https://000011.awsstudygroup.com/ |
-| 3 | - Use AWS CLI with Amazon SNS (create topic, subscription, publish) <br> - Use AWS CLI with IAM (create users, list policies) <br> - Use AWS CLI with VPC (list VPCs, subnets, SGs) | 10/30/2025 | 10/30/2025 | https://000011.awsstudygroup.com/ |
-| 4 | - Create EC2 instance using AWS CLI <br> - Troubleshoot CLI errors <br> - Clean up CLI resources <br><br> **Start Route 53 Hybrid DNS Lab**: <br> - Introduction to Hybrid DNS with Route 53 Resolver | 10/31/2025 | 10/31/2025 | https://000011.awsstudygroup.com/ <br> https://000010.awsstudygroup.com/ |
-| 5 | - Deploy Microsoft AD (in lab environment) <br> - Configure Route 53 Resolver rules <br> - Setup DNS inbound & outbound endpoints <br> - Test DNS resolution between on-premises and AWS <br> - Clean up resources | 11/01/2025 | 11/01/2025 | https://000010.awsstudygroup.com/ |
+| --- | ---- |------------|-----------------| --------- |
+| 1 | - Introduction to AWS CLI <br> - Supported command environments (Linux/macOS/Windows/Remote) <br> - Create and understand CLI profiles <br> - Configure AWS CLI using `aws configure` | 10/11/2025 | 10/11/2025      | https://000011.awsstudygroup.com/ |
+| 2 | - Install AWS CLI <br> - View AWS resources using CLI <br> - Interact with Amazon S3 via CLI (list buckets, upload/download objects) | 11/11/2025 | 11/11/2025      | https://000011.awsstudygroup.com/ |
+| 3 | - Use AWS CLI with Amazon SNS (create topic, subscription, publish) <br> - Use AWS CLI with IAM (create users, list policies) <br> - Use AWS CLI with VPC (list VPCs, subnets, SGs) | 12/11/2025 | 12/11/2025      | https://000011.awsstudygroup.com/ |
+| 4 | - Create EC2 instance using AWS CLI <br> - Troubleshoot CLI errors <br> - Clean up CLI resources <br><br> **Start Route 53 Hybrid DNS Lab**: <br> - Introduction to Hybrid DNS with Route 53 Resolver | 13/11/2025 | 13/11/2025      | https://000011.awsstudygroup.com/ <br> https://000010.awsstudygroup.com/ |
+| 5 | - Deploy Microsoft AD (in lab environment) <br> - Configure Route 53 Resolver rules <br> - Setup DNS inbound & outbound endpoints <br> - Test DNS resolution between on-premises and AWS <br> - Clean up resources | 14/11/2025 | 14/11/2025      | https://000010.awsstudygroup.com/ |
 
 ---
 

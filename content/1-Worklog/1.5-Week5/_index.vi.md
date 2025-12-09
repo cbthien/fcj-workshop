@@ -3,7 +3,7 @@ title: "Nhật ký Tuần 5"
 date: "2025-10-07"
 weight: 5
 chapter: false
-pre: " <b> 1.5. </b> "
+pre: " <b> 1.5 </b> "
 ---
 
 ### Mục tiêu Tuần 5:
@@ -20,12 +20,12 @@ pre: " <b> 1.5. </b> "
 ### Các nhiệm vụ thực hiện trong tuần:
 
 | Ngày | Nhiệm vụ                                                                                                                                                                                                                                      | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo                         |
-| ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------------- | ------------------------------------------ |
-| 1    | - Giới thiệu về AWS Cloud9 <br>&emsp; + Tạo Cloud9 instance <br>&emsp; + Khám phá giao diện và các tính năng của IDE                                                                                                                         | 10/07/2025   | 10/07/2025       | <https://000049.awsstudygroup.com/>        |
-| 2    | - **Thực hành Cloud9:** <br>&emsp; + Sử dụng terminal & editor <br>&emsp; + Chạy AWS CLI trong Cloud9 <br>&emsp; + Thực hành các lệnh CLI cơ bản                                                      | 10/08/2025   | 10/08/2025       | <https://000049.awsstudygroup.com/>        |
-| 3    | - Bắt đầu workshop Amazon S3: <br>&emsp; + Tìm hiểu S3 fundamentals <br>&emsp; + Bật Static Website Hosting <br>&emsp; + Cấu hình Public Access Block & phân quyền public object                      | 10/09/2025   | 10/09/2025       | <https://000057.awsstudygroup.com/>        |
-| 4    | - Kiểm tra website tĩnh trên S3 <br>&emsp; + Tích hợp CloudFront để tăng tốc độ <br>&emsp; + Bật Versioning <br>&emsp; + Di chuyển object trong S3                                                    | 10/10/2025   | 10/10/2025       | <https://000057.awsstudygroup.com/>        |
-| 5    | - Cấu hình S3 Cross-Region Replication (CRR) <br>&emsp; + Điều kiện & yêu cầu IAM <br>&emsp; + Thiết lập replication rule <br> - Dọn dẹp toàn bộ tài nguyên S3 và Cloud9                               | 10/11/2025   | 10/11/2025       | <https://000057.awsstudygroup.com/>        |
+| ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |--------------|-----------------| ------------------------------------------ |
+| 1    | - Giới thiệu về AWS Cloud9 <br>&emsp; + Tạo Cloud9 instance <br>&emsp; + Khám phá giao diện và các tính năng của IDE                                                                                                                         | 06/10/2025   | 06/10/2025      | <https://000049.awsstudygroup.com/>        |
+| 2    | - **Thực hành Cloud9:** <br>&emsp; + Sử dụng terminal & editor <br>&emsp; + Chạy AWS CLI trong Cloud9 <br>&emsp; + Thực hành các lệnh CLI cơ bản                                                      | 07/10/2025   | 07/10/2025      | <https://000049.awsstudygroup.com/>        |
+| 3    | - Bắt đầu workshop Amazon S3: <br>&emsp; + Tìm hiểu S3 fundamentals <br>&emsp; + Bật Static Website Hosting <br>&emsp; + Cấu hình Public Access Block & phân quyền public object                      | 08/10/2025   | 08/10/2025      | <https://000057.awsstudygroup.com/>        |
+| 4    | - Kiểm tra website tĩnh trên S3 <br>&emsp; + Tích hợp CloudFront để tăng tốc độ <br>&emsp; + Bật Versioning <br>&emsp; + Di chuyển object trong S3                                                    | 09/10/2025   | 09/10/2025      | <https://000057.awsstudygroup.com/>        |
+| 5    | - Cấu hình S3 Cross-Region Replication (CRR) <br>&emsp; + Điều kiện & yêu cầu IAM <br>&emsp; + Thiết lập replication rule <br> - Dọn dẹp toàn bộ tài nguyên S3 và Cloud9                               | 10/10/2025   | 10/10/2025      | <https://000057.awsstudygroup.com/>        |
 
 ---
 

@@ -3,7 +3,7 @@ title: "Week 5 Worklog"
 date: "2025-10-07"
 weight: 5
 chapter: false
-pre: " <b> 1.5. </b> "
+pre: " <b> 1.5 </b> "
 ---
 
 ### Week 5 Objectives:
@@ -20,12 +20,12 @@ pre: " <b> 1.5. </b> "
 ### Tasks to be carried out this week:
 
 | Day | Task                                                                                                                                                                                                                                           | Start Date | Completion Date | Reference Material                         |
-| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------------- | ------------------------------------------ |
-| 1   | - Introduction to AWS Cloud9 <br>&emsp; + Create a Cloud9 instance <br>&emsp; + Explore IDE layout and features                                                                                                                                | 10/07/2025 | 10/07/2025       | <https://000049.awsstudygroup.com/>        |
-| 2   | - **Cloud9 Hands-on:** <br>&emsp; + Use terminal & built-in editor <br>&emsp; + Run AWS CLI inside Cloud9 <br>&emsp; + Practice basic CLI operations                                                     | 10/08/2025 | 10/08/2025       | <https://000049.awsstudygroup.com/>        |
-| 3   | - Begin Amazon S3 workshop: <br>&emsp; + Learn S3 fundamentals <br>&emsp; + Enable static website hosting <br>&emsp; + Configure Public Access Block & public object permissions                         | 10/09/2025 | 10/09/2025       | <https://000057.awsstudygroup.com/>        |
-| 4   | - Test S3 static website <br>&emsp; + Configure CloudFront to accelerate website performance <br>&emsp; + Enable Bucket Versioning <br>&emsp; + Move objects within S3                                   | 10/10/2025 | 10/10/2025       | <https://000057.awsstudygroup.com/>        |
-| 5   | - Configure S3 Cross-Region Replication (CRR) <br>&emsp; + Review requirements and IAM permissions <br>&emsp; + Set up replication rules <br> - Clean up all S3 and Cloud9 resources                      | 10/11/2025 | 10/11/2025       | <https://000057.awsstudygroup.com/>        |
+| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |------------|-----------------| ------------------------------------------ |
+| 1   | - Introduction to AWS Cloud9 <br>&emsp; + Create a Cloud9 instance <br>&emsp; + Explore IDE layout and features                                                                                                                                | 06/10/2025 | 06/10/2025      | <https://000049.awsstudygroup.com/>        |
+| 2   | - **Cloud9 Hands-on:** <br>&emsp; + Use terminal & built-in editor <br>&emsp; + Run AWS CLI inside Cloud9 <br>&emsp; + Practice basic CLI operations                                                     | 07/10/2025 | 07/10/2025      | <https://000049.awsstudygroup.com/>        |
+| 3   | - Begin Amazon S3 workshop: <br>&emsp; + Learn S3 fundamentals <br>&emsp; + Enable static website hosting <br>&emsp; + Configure Public Access Block & public object permissions                         | 08/10/2025 | 08/10/2025      | <https://000057.awsstudygroup.com/>        |
+| 4   | - Test S3 static website <br>&emsp; + Configure CloudFront to accelerate website performance <br>&emsp; + Enable Bucket Versioning <br>&emsp; + Move objects within S3                                   | 09/10/2025 | 09/10/2025      | <https://000057.awsstudygroup.com/>        |
+| 5   | - Configure S3 Cross-Region Replication (CRR) <br>&emsp; + Review requirements and IAM permissions <br>&emsp; + Set up replication rules <br> - Clean up all S3 and Cloud9 resources                      | 10/10/2025 | 10/10/2025      | <https://000057.awsstudygroup.com/>        |
 
 ---
 

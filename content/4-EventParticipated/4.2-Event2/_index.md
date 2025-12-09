@@ -1,142 +1,240 @@
 ---
 title: "Event 2"
 date: "`r Sys.Date()`"
-weight: 1
+weight: 2
 chapter: false
-pre: " <b> 4.2. </b> "
+pre: " <b> 4.2 </b> "
 ---
 
-# Summary Report: "AWS Cloud Mastery Series #2 workshop"
+# Reflection Report: “AWS Cloud Mastery Series #2 – DevOps on AWS”
 
-### Event Objectives
+---
 
-- Equip modern DevOps mindset and how to apply it on AWS ecosystem.
-- Guide deployment of CI/CD, IaC, container orchestration, and monitoring according to AWS standards.
-- Optimize development speed, release quality, and system reliability.
+##  Event Objectives
 
-### Speakers
+- Introduce **DevOps services on AWS** and how to design a **CI/CD pipeline**.  
+- Equip participants with a **modern DevOps mindset** and how to apply it in the AWS ecosystem.  
+- Explore concepts of **Infrastructure as Code (IaC)** and related tools (CloudFormation, CDK, Terraform).  
+- Provide an overview of **container-based workloads** on AWS (ECR, ECS, EKS, App Runner).  
+- Demonstrate how to achieve effective **monitoring & observability** using native AWS services.  
+- Optimize **development speed, release quality, and system reliability**.
 
-- **FCJ Team** 
-- **Kha Van** - Cloud Security Engineer
-- **AWS Developer Advocate Team**
+---
 
-### Key Highlights
+##  Speakers
 
-#### AWS DevOps Services – CI/CD Pipeline
+- **Truong Quang Tinh** – AWS Community Builder, Platform Engineer (TymeX)  
+- **Bao Huynh** – AWS Community Builder  
+- **Nguyen Khanh Phuc Thinh** – AWS Community Builder  
+- **Tran Dai Vi** – AWS Community Builder  
+- **Huynh Hoang Long** – AWS Community Builder  
+- **Pham Hoang Quy** – AWS Community Builder  
+- **Nghiem Le** – AWS Community Builder  
+- **Dinh Le Hoang Anh** – Cloud Engineer Trainee, First Cloud AI Journey  
 
-- **Build**: optimize `buildspec.yml` (build caching & parallel test).
-- **Demo**: end-to-end pipeline — Commit → Build → Test → Deploy → Monitor.
-- **Deployment**: must be 100% automated — no click-ops (no manual deployments).
+(Together with members from the **FCJ Team**, **AWS Developer Advocate Team**, and community guests.)
 
-#### Infrastructure as Code
+---
 
-- **Tools:** `CloudFormation` / `Terraform` / `CDK` — used to deploy infrastructure (CloudFormation is AWS managed service).
-- **Template anatomy (YAML):** `Resources` → `Parameters` → `Outputs` → `Mappings`.
-- **CDK model:** Constructs → Stacks → Apps. Supports multiple languages (TypeScript, Python, Java...).
-- **Benefits:** easy to reuse, modularize, and test.
-- **When to choose:**
-    - **CloudFormation:** declarative, suitable for enterprise teams.
-    - **CDK:** developer-friendly, suitable for Agile teams.
+#  Key Highlights
 
-> "No IaC = No DevOps."
+##  Building a DevOps Mindset Foundation
 
-#### Container Services on AWS
+The speakers emphasized that **DevOps is not just a job title** but a **mindset + set of working habits**:
 
-- **Docker fundamentals**
-    - `Dockerfile` → Build → Image → Registry → Run container
-    - Registry: Docker Hub or **Amazon ECR**
-- **Amazon ECR**
-    - Image scanning, lifecycle policies, permissions per repository
-- **Amazon ECS**
-    - Run containers with **Fargate** or **EC2**
-    - Application Load Balancer, auto-scaling by CPU, memory, queue length
-- **Amazon EKS**
-    - Managed Kubernetes service
-    - Use cases: large-scale, multi-team, portable workloads
-- **AWS App Runner**
-    - For teams who want to "deploy containers like deploying to Vercel"
+- Automating repetitive tasks.  
+- Sharing knowledge across roles (Dev, Ops, QA, Security…).  
+- Continuously experimenting, learning, and improving (continuous learning).  
+- Making decisions based on **measurable data**, not just gut feeling.  
 
-> Case study: Compare `ECS`, `EKS`, `App Runner` for microservices. "Containers = scalability + portability. ECS/EKS help production run smoothly."
+Common mistakes for beginners:
 
-#### Monitoring & Observability
+- Only “following tutorials” without building real-world projects.  
+- Comparing themselves too much with others instead of focusing on **small but consistent progress**.  
 
-- **CloudWatch**
-    - Metrics, Logs, Dashboards
-    - Composite alarms
-    - Custom metrics for business KPIs
+Key messages repeated throughout the session:  
+> *No CI/CD → No DevOps.*  
+> *No IaC → No DevOps.*
 
-- **AWS X-Ray**
-    - Distributed tracing
-    - Debug latency, bottlenecks, service maps
+---
 
-- **Best practices**
-    - Design alerting to avoid noise
-    - Clear on-call workflow and runbooks
-    - Monitor using Golden Signals: Latency, Traffic, Errors, Saturation
+##  Infrastructure as Code (IaC)
 
-> "No observability = not knowing how your system is dying."  
+The tools/approaches were compared and analyzed:
 
-### Key Takeaways
+- **CloudFormation**  
+  - Native AWS service, declarative model.  
+  - Suitable for many enterprise teams wanting to stay fully AWS-native.  
 
-#### Modern DevOps Mindset
+- **AWS CDK**  
+  - Define infrastructure using programming languages (TypeScript, Python, Java, …).  
+  - Model: **Constructs → Stacks → Apps**.  
+  - Easy to modularize, reuse, and test; very developer-friendly and fits Agile teams.
 
-- Focus on **outcome**, not tools.
-- **DORA metrics**: standard for measuring software performance.
-- Continuous Integration → Continuous Delivery → Continuous Learning.
+- **Terraform**  
+  - Suitable for multi-cloud / hybrid scenarios.  
+  - Manages state files and supports many providers.  
 
-#### Critical Technical Architecture
+Concepts were explained through practical examples:
 
-- **CI/CD (AWS)**: CodePipeline, CodeBuild, CodeDeploy — design pipelines according to standards.
-- **IaC** is the backbone of automation (CloudFormation / Terraform / CDK).
-- **Containerization** helps microservices scale and be portable.
-- **Observability**: detect errors quickly, reduce MTTR with metrics, logs, and tracing.
+- Stack, Construct, State file, YAML template structure (Resources, Parameters, Outputs, Mappings)…  
 
-#### DevOps Strategy
+**Important message:**
 
-- Start from small pipeline → expand gradually.
-- Use **blue/green** and **canary** to reduce deployment risk.
-- Apply **IaC + GitOps** for multi-team environments.  
+- Infrastructure defined as IaC becomes **consistent, version-controlled, easy to review, and easy to roll back**, much better than manual click-ops in the console.
 
-### Applying to Work
+---
 
-- Build CI/CD for backend/web projects (CodePipeline / CodeBuild / CodeDeploy).
-- Package services with Docker and deploy to `ECS` (Fargate) or `App Runner`.
-- Use `CDK` to build AWS infrastructure instead of manual console operations.
-- Monitor systems with CloudWatch (dashboards, alarms, custom metrics).
-- Set up incident workflow for projects: alert → investigate → fix → postmortem (runbooks & on-call).  
+##  AWS DevOps Services – CI/CD Pipeline
 
-### Event Experience
+The content focused on building an AWS-standard pipeline:
 
-- Attending the **"AWS Cloud Mastery Series #2"** workshop was an extremely valuable experience, helping me develop the mindset of a DevOps engineer.
+- **CI/CD on AWS:**
+  - **CodePipeline** – orchestrates the entire pipeline.  
+  - **CodeBuild** – builds, tests, linting, static analysis (buildspec.yml, build caching, parallel tests).  
+  - **CodeDeploy** – deploys applications (blue/green, canary, rolling).  
 
-#### Learning from highly skilled speakers
+- **End-to-end pipeline demo:**
+  - Commit → Build → Test → Deploy → Monitor.  
+  - Emphasis: **deployment must be 100% automated**, no manual “click deploy” in the console.
 
-- Understood in detail how AWS handles incidents & detection in practice.
+- **DevOps strategy:**
+  - Start with a **small pipeline**, then expand gradually.  
+  - Use **blue/green** and **canary deployments** to reduce risk.  
+  - Combine **IaC + GitOps** for multi-team environments.
 
-#### Hands-on technical experience
+---
 
-- Demo of pipeline from commit → live deployment.
-- Demo of drift detection, CDK synth/deploy.
-- Real-time container deployment on ECS/ECR.
+##  Containers and Deployment Models on AWS
 
-#### Leveraging modern tools
+### Docker fundamentals
 
-- CloudFormation + CDK make IaC clear and repeatable.
-- ECR scanning enhances security.
-- X-Ray makes debugging microservices easy.
+- **Dockerfile → Build → Image → Registry → Run container**  
+- Registries: **Docker Hub** or **Amazon ECR**
 
-#### Networking and thinking
+### Amazon ECR
 
-- Understood clearly how Dev/Product/DevOps teams collaborate in CI/CD pipelines.
-- "Automate everything" mindset became more ingrained.
+- Stores container images.  
+- Supports **image scanning**, lifecycle policies, and per-repository permissions.
 
-#### Lessons learned
+### Amazon ECS
 
-- No CI/CD → No DevOps.
-- IaC is a prerequisite.
-- Containers → scalability + speed.
-- Observability → reliability.
+- Orchestrates containers with **Fargate** or **EC2**.  
+- Integrates with **Application Load Balancer**, autoscaling based on CPU, memory, and queue length.  
 
-#### Some event photos
-![Event](/images/4-EventParticipated/29.11-event.jpg)
-> Overall, the event not only provided technical knowledge but also helped me change my DevOps thinking, automate software development processes, and improve team collaboration.
+### Amazon EKS
+
+- **Managed Kubernetes service** on AWS.  
+- Suitable for **large-scale, multi-team** environments requiring portability and the full Kubernetes ecosystem.
+
+### AWS App Runner
+
+- A service to “deploy containers like deploying to Vercel/Netlify” for backend/web applications.  
+- Suitable for teams that want to **minimize infrastructure/cluster management**.
+
+**Case study & comparison of ECS, EKS, App Runner:**
+
+- ECS: easy to use, AWS-native, suitable for most container workloads on AWS.  
+- EKS: ideal when already using Kubernetes or requiring multi-cloud portability.  
+- App Runner: great for small teams, startups, and feature teams who want to focus on code.
+
+---
+
+##  Monitoring & Observability
+
+This part focused on **CloudWatch** and **X-Ray**:
+
+### Amazon CloudWatch
+
+- Collects **Metrics, Logs, Dashboards**.  
+- Supports composite alarms, log filters, and custom metrics for business KPIs.  
+
+### AWS X-Ray
+
+- **Distributed tracing**: draws service maps and traces end-to-end requests.  
+- Very useful for debugging **latency and bottlenecks** in microservices.  
+
+**Best practices:**
+
+- Design alerts carefully to avoid “alert noise”.  
+- Build clear **on-call workflows and runbooks**.  
+- Monitor using the **Golden Signals**: Latency, Traffic, Errors, Saturation.  
+
+Highlighted message:  
+> *No observability = no idea how your system is dying.*
+
+---
+
+#  Key Learnings
+
+- DevOps **is not just a job title**; it’s a mindset and a set of habits: automation, sharing, and measurable outcomes.  
+- **IaC** helps infrastructure become:
+  - Consistent  
+  - Repeatable  
+  - Easy to maintain, audit, and roll back  
+- Choosing IaC tools (CloudFormation / CDK / Terraform) should be based on:
+  - Team requirements  
+  - Project needs  
+  - Complexity and environment (AWS-only vs multi-cloud).  
+- Understanding the differences between container services (ECR, ECS, EKS, App Runner) helps:
+  - Pick the right service for the right workload.  
+- **Monitoring & Observability** are not “add-ons at the end” but must be designed **from day one**.  
+- Gained more familiarity with concepts such as:
+  - **DORA metrics**, CI → CD → Continuous Learning  
+  - Blue/green and canary deployments  
+  - GitOps, incident workflows, MTTR…
+
+---
+
+#  Applying to Work
+
+### Example: AI Chatbot Project on AWS
+
+If I have the opportunity to build an **AI Chatbot on AWS**, I plan to apply:
+
+- **CI/CD pipeline design:**
+  - Use **CodePipeline + CodeBuild + CodeDeploy** to automate build, test, and deployment.  
+  - Every commit to the chatbot code (backend, Lambda, API) will be tested and deployed automatically.  
+
+- **Infrastructure as Code:**
+  - Use **AWS CDK** to define the entire infrastructure:  
+    - Lambda, API Gateway, DynamoDB, S3, IAM, EventBridge, …  
+  - Everything is version-controlled in Git, making it easy to reuse and scale.
+
+- **Containerization & deployment:**
+  - Package some services (e.g., RAG API, vector DB interface) into Docker images.  
+  - Deploy to **ECS (Fargate)** or **App Runner**, depending on scaling needs.
+
+- **Monitoring & Incident handling:**
+  - Use **CloudWatch metrics + logs + dashboards** to monitor the chatbot.  
+  - Apply **X-Ray** if the architecture is microservices-based.  
+  - Set up an **incident workflow**: alert → investigate → fix → postmortem (runbook, on-call).
+
+By applying DevOps practices and AWS services, an AI chatbot system can:
+
+- Develop faster (higher dev velocity).  
+- Deploy frequently while staying safe.  
+- Be easier to maintain and scale as user traffic grows.
+
+---
+
+#  Event Experience
+
+- The event gave me a **more realistic view** of how modern organizations implement DevOps on AWS.  
+- The speakers not only covered theory but also shared **plenty of real-world examples**, from IaC and CI/CD to container orchestration.  
+- I got to see demos of:
+  - A pipeline from **commit → live deployment**.  
+  - **Drift detection**, `cdk synth/deploy`.  
+  - Real-time container deployments on **ECS/ECR**.  
+- It was also a great opportunity to **connect with like-minded peers**, exchange DevOps, AWS, and Cloud learning experiences.  
+
+### Takeaways
+
+- **No CI/CD → No DevOps.**  
+- **IaC is a prerequisite** for effective automation.  
+- **Containers = scalability + portability + speed**.  
+- **Observability = reliability** – if you can’t observe it, you can’t trust it to stay healthy in production.  
+
+> In summary, “AWS Cloud Mastery Series #2 – DevOps on AWS” not only helped me solidify DevOps concepts in theory, but also clarified how to build **automated, scalable, and observable** systems on AWS, forming a strong foundation for future Cloud & DevOps projects.
+## Some photos from the event
+![ws Image](/images/ws2.png)

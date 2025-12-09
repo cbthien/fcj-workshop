@@ -3,7 +3,7 @@ title: "Nhật ký Tuần 4"
 date: "2025-09-30"
 weight: 4
 chapter: false
-pre: " <b> 1.4. </b> "
+pre: " <b> 1.4 </b> "
 ---
 
 ### Mục tiêu Tuần 4:
@@ -19,12 +19,12 @@ pre: " <b> 1.4. </b> "
 ### Các nhiệm vụ thực hiện trong tuần:
 
 | Ngày | Nhiệm vụ                                                                                                                                                                                                                                           | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo                         |
-| ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------------- | ------------------------------------------ |
-| 1    | - Tìm hiểu giới thiệu EC2 & bước chuẩn bị <br>&emsp; + Khái niệm EC2 <br>&emsp; + Các tài nguyên cần thiết <br>&emsp; + Yêu cầu IAM & networking                                                          | 09/30/2025   | 09/30/2025       | <https://000004.awsstudygroup.com/>        |
-| 2    | - **Khởi tạo EC2:** <br>&emsp; + Tạo Windows Server 2022 instance <br>&emsp; + Tạo Amazon Linux instance <br>&emsp; + Kết nối và kiểm tra truy cập                                                         | 10/01/2025   | 10/01/2025       | <https://000004.awsstudygroup.com/>        |
-| 3    | - **Triển khai ứng dụng:** <br>&emsp; + Triển khai AWS User Management App trên Amazon Linux 2 <br>&emsp; + Triển khai Node.js App trên Windows EC2                                                        | 10/02/2025   | 10/02/2025       | <https://000004.awsstudygroup.com/>        |
-| 4    | - **IAM Governance & Authorization:** <br>&emsp; + Hiểu governance chi phí & sử dụng với IAM <br>&emsp; + So sánh Access Key vs IAM Role <br>&emsp; + Rủi ro của việc dùng Access Key lâu dài              | 10/03/2025   | 10/03/2025       | <https://000048.awsstudygroup.com/>        |
-| 5    | - **Thực hành IAM Role cho EC2:** <br>&emsp; + Tạo IAM Role cho EC2 <br>&emsp; + Gán Role vào EC2 instance <br>&emsp; + Kiểm tra ứng dụng truy cập AWS qua Role <br>&emsp; + Clean up resource sau bài học | 10/04/2025   | 10/04/2025       | <https://000048.awsstudygroup.com/>        |
+| ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |--------------|-----------------| ------------------------------------------ |
+| 1    | - Tìm hiểu giới thiệu EC2 & bước chuẩn bị <br>&emsp; + Khái niệm EC2 <br>&emsp; + Các tài nguyên cần thiết <br>&emsp; + Yêu cầu IAM & networking                                                          | 30/09/2025   | 30/09/2025      | <https://000004.awsstudygroup.com/>        |
+| 2    | - **Khởi tạo EC2:** <br>&emsp; + Tạo Windows Server 2022 instance <br>&emsp; + Tạo Amazon Linux instance <br>&emsp; + Kết nối và kiểm tra truy cập                                                         | 01/10/2025   | 01/10/2025      | <https://000004.awsstudygroup.com/>        |
+| 3    | - **Triển khai ứng dụng:** <br>&emsp; + Triển khai AWS User Management App trên Amazon Linux 2 <br>&emsp; + Triển khai Node.js App trên Windows EC2                                                        | 02/10/2025   | 02/10/2025      | <https://000004.awsstudygroup.com/>        |
+| 4    | - **IAM Governance & Authorization:** <br>&emsp; + Hiểu governance chi phí & sử dụng với IAM <br>&emsp; + So sánh Access Key vs IAM Role <br>&emsp; + Rủi ro của việc dùng Access Key lâu dài              | 03/10/2025   | 03/10/2025     | <https://000048.awsstudygroup.com/>        |
+| 5    | - **Thực hành IAM Role cho EC2:** <br>&emsp; + Tạo IAM Role cho EC2 <br>&emsp; + Gán Role vào EC2 instance <br>&emsp; + Kiểm tra ứng dụng truy cập AWS qua Role <br>&emsp; + Clean up resource sau bài học | 04/10/2025   | 04/10/2025       | <https://000048.awsstudygroup.com/>        |
 
 ---
 

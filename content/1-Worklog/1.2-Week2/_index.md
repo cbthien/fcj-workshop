@@ -3,7 +3,7 @@ title: "Week 2 Worklog"
 date: "2025-09-15"
 weight: 2
 chapter: false
-pre: " <b> 1.2. </b> "
+pre: " <b> 1.2 </b> "
 ---
 
 ### Week 2 Objectives:
@@ -19,12 +19,12 @@ pre: " <b> 1.2. </b> "
 ### Tasks to be carried out this week:
 
 | Day | Task                                                                                                                                                                                                                                  | Start Date | Completion Date | Reference Material                         |
-| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------------- | ------------------------------------------ |
-| 1   | - Study **AWS Budgets** overview <br>&emsp; + What is AWS Budgets? <br>&emsp; + Why use budgets to control costs? <br>&emsp; + Types of budgets (Cost, Usage, RI, Savings Plans)                                                     | 09/15/2025 | 09/15/2025       | <https://000007.awsstudygroup.com/>        |
-| 2   | - **Hands-on with Budgets (1):** <br>&emsp; + Create Budget by Template <br>&emsp; + Create a Cost Budget with alert thresholds <br>&emsp; + Review budget details and notification settings                                         | 09/16/2025 | 09/16/2025       | <https://000007.awsstudygroup.com/>        |
-| 3   | - **Hands-on with Budgets (2):** <br>&emsp; + Create a Usage Budget for a specific service (e.g., EC2) <br>&emsp; + Create RI Budget <br>&emsp; + Understand when to use each type of budget                                        | 09/17/2025 | 09/17/2025       | <https://000007.awsstudygroup.com/>        |
-| 4   | - **Hands-on with Budgets (3):** <br>&emsp; + Create Savings Plans Budget <br>&emsp; + Review alerts and examples of cost overrun scenarios <br>&emsp; + Clean up budgets and related resources after the lab                       | 09/18/2025 | 09/18/2025       | <https://000007.awsstudygroup.com/>        |
-| 5   | - Study **AWS Support**: <br>&emsp; + AWS Support Plans and their differences <br>&emsp; + How to access AWS Support Center <br> - **Hands-on:** <br>&emsp; + Navigate to Support Center <br>&emsp; + Create a support case <br>&emsp; + View / update / close support requests | 09/19/2025 | 09/19/2025       | <https://000009.awsstudygroup.com/>        |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |------------|-----------------| ------------------------------------------ |
+| 1   | - Study **AWS Budgets** overview <br>&emsp; + What is AWS Budgets? <br>&emsp; + Why use budgets to control costs? <br>&emsp; + Types of budgets (Cost, Usage, RI, Savings Plans)                                                     | 15/09/2025 | 15/09/2025      | <https://000007.awsstudygroup.com/>        |
+| 2   | - **Hands-on with Budgets (1):** <br>&emsp; + Create Budget by Template <br>&emsp; + Create a Cost Budget with alert thresholds <br>&emsp; + Review budget details and notification settings                                         | 16/09/2025 | 16/09/2025      | <https://000007.awsstudygroup.com/>        |
+| 3   | - **Hands-on with Budgets (2):** <br>&emsp; + Create a Usage Budget for a specific service (e.g., EC2) <br>&emsp; + Create RI Budget <br>&emsp; + Understand when to use each type of budget                                        | 17/09/2025 | 17/09/2025      | <https://000007.awsstudygroup.com/>        |
+| 4   | - **Hands-on with Budgets (3):** <br>&emsp; + Create Savings Plans Budget <br>&emsp; + Review alerts and examples of cost overrun scenarios <br>&emsp; + Clean up budgets and related resources after the lab                       | 18/09/2025 | 18/09/2025      | <https://000007.awsstudygroup.com/>        |
+| 5   | - Study **AWS Support**: <br>&emsp; + AWS Support Plans and their differences <br>&emsp; + How to access AWS Support Center <br> - **Hands-on:** <br>&emsp; + Navigate to Support Center <br>&emsp; + Create a support case <br>&emsp; + View / update / close support requests | 19/09/2025 | 19/09/2025      | <https://000009.awsstudygroup.com/>        |
 
 ---
 

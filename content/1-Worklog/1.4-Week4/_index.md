@@ -3,7 +3,7 @@ title: "Week 4 Worklog"
 date: "2025-09-30"
 weight: 4
 chapter: false
-pre: " <b> 1.4. </b> "
+pre: " <b> 1.4 </b> "
 ---
 
 ### Week 4 Objectives:
@@ -19,12 +19,12 @@ pre: " <b> 1.4. </b> "
 ### Tasks to be carried out this week:
 
 | Day | Task                                                                                                                                                                                                                                            | Start Date | Completion Date | Reference Material                         |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | ---------------- | ------------------------------------------ |
-| 1   | - Study EC2 introduction & preparation steps <br>&emsp; + EC2 concepts <br>&emsp; + Resources required <br>&emsp; + IAM & networking prerequisites                                                       | 09/30/2025 | 09/30/2025       | <https://000004.awsstudygroup.com/>        |
-| 2   | - **Launch EC2 instances:** <br>&emsp; + Launch Windows Server 2022 instance <br>&emsp; + Launch Amazon Linux instance <br>&emsp; + Connect and validate OS-level access                                 | 10/01/2025 | 10/01/2025       | <https://000004.awsstudygroup.com/>        |
-| 3   | - **Deploy applications on EC2:** <br>&emsp; + Deploy AWS User Management App on Amazon Linux <br>&emsp; + Deploy Node.js application on Windows EC2                                                    | 10/02/2025 | 10/02/2025       | <https://000004.awsstudygroup.com/>        |
-| 4   | - **IAM Governance & Authorization:** <br>&emsp; + Understand cost & usage governance with IAM <br>&emsp; + Compare Access Key vs IAM Role <br>&emsp; + Learn risks of long-term access keys             | 10/03/2025 | 10/03/2025       | <https://000048.awsstudygroup.com/>        |
-| 5   | - **IAM Role Hands-on:** <br>&emsp; + Create IAM Role for EC2 <br>&emsp; + Attach IAM Role to EC2 instance <br>&emsp; + Test application accessing AWS services via IAM Role <br>&emsp; + Clean up resources | 10/04/2025 | 10/04/2025       | <https://000048.awsstudygroup.com/>        |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |------------|-----------------| ------------------------------------------ |
+| 1   | - Study EC2 introduction & preparation steps <br>&emsp; + EC2 concepts <br>&emsp; + Resources required <br>&emsp; + IAM & networking prerequisites                                                       | 30/09/2025 | 30/09/2025      | <https://000004.awsstudygroup.com/>        |
+| 2   | - **Launch EC2 instances:** <br>&emsp; + Launch Windows Server 2022 instance <br>&emsp; + Launch Amazon Linux instance <br>&emsp; + Connect and validate OS-level access                                 | 01/10/2025 | 01/10/2025      | <https://000004.awsstudygroup.com/>        |
+| 3   | - **Deploy applications on EC2:** <br>&emsp; + Deploy AWS User Management App on Amazon Linux <br>&emsp; + Deploy Node.js application on Windows EC2                                                    | 02/10/2025 | 02/10/2025      | <https://000004.awsstudygroup.com/>        |
+| 4   | - **IAM Governance & Authorization:** <br>&emsp; + Understand cost & usage governance with IAM <br>&emsp; + Compare Access Key vs IAM Role <br>&emsp; + Learn risks of long-term access keys             | 03/10/2025 | 03/10/2025      | <https://000048.awsstudygroup.com/>        |
+| 5   | - **IAM Role Hands-on:** <br>&emsp; + Create IAM Role for EC2 <br>&emsp; + Attach IAM Role to EC2 instance <br>&emsp; + Test application accessing AWS services via IAM Role <br>&emsp; + Clean up resources | 04/10/2025  | 04/10/2025      | <https://000048.awsstudygroup.com/>        |
 
 ---
 

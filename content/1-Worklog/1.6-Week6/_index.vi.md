@@ -3,7 +3,7 @@ title: "Nhật ký Tuần 6"
 date: "2025-10-14"
 weight: 6
 chapter: false
-pre: " <b> 1.6. </b> "
+pre: " <b> 1.6 </b> "
 ---
 
 ### Mục tiêu Tuần 6:
@@ -19,12 +19,12 @@ pre: " <b> 1.6. </b> "
 ### Các nhiệm vụ thực hiện trong tuần:
 
 | Ngày | Nhiệm vụ                                                                                                                                                                                                                                       | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo                         |
-| ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------------- | ------------------------------------------ |
-| 1    | - Tìm hiểu tổng quan Amazon RDS & yêu cầu chuẩn bị <br>&emsp; + Các engine hỗ trợ <br>&emsp; + Thiết kế VPC cho RDS (EC2 public → RDS private)                                                           | 10/14/2025   | 10/14/2025       | <https://000005.awsstudygroup.com/>        |
-| 2    | - **Thực hành RDS:** <br>&emsp; + Tạo EC2 trong public subnet <br>&emsp; + Tạo RDS MySQL trong private subnet <br>&emsp; + Cấu hình security group để EC2 kết nối RDS                                   | 10/15/2025   | 10/15/2025       | <https://000005.awsstudygroup.com/>        |
-| 3    | - **Triển khai ứng dụng:** <br>&emsp; + Deploy ứng dụng kết nối tới RDS <br>&emsp; + Kiểm tra CRUD từ EC2 lên database                                                                                  | 10/16/2025   | 10/16/2025       | <https://000005.awsstudygroup.com/>        |
-| 4    | - **Workshop Lightsail – Phần 1:** <br>&emsp; + Deploy database trên Lightsail <br>&emsp; + Triển khai WordPress, Prestashop và Akaunting                                                               | 10/17/2025   | 10/17/2025       | <https://000045.awsstudygroup.com/>        |
-| 5    | - **Workshop Lightsail – Phần 2:** <br>&emsp; + Cấu hình bảo mật ứng dụng <br>&emsp; + Tạo snapshot <br>&emsp; + Scale lên instance mạnh hơn <br>&emsp; + Tạo alarm giám sát <br>&emsp; + Cleanup tài nguyên | 10/18/2025   | 10/18/2025       | <https://000045.awsstudygroup.com/>        |
+| ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |--------------|-----------------| ------------------------------------------ |
+| 1    | - Tìm hiểu tổng quan Amazon RDS & yêu cầu chuẩn bị <br>&emsp; + Các engine hỗ trợ <br>&emsp; + Thiết kế VPC cho RDS (EC2 public → RDS private)                                                           | 13/10/2025   | 13/10/2025      | <https://000005.awsstudygroup.com/>        |
+| 2    | - **Thực hành RDS:** <br>&emsp; + Tạo EC2 trong public subnet <br>&emsp; + Tạo RDS MySQL trong private subnet <br>&emsp; + Cấu hình security group để EC2 kết nối RDS                                   | 14/10/2025   | 14/10/2025      | <https://000005.awsstudygroup.com/>        |
+| 3    | - **Triển khai ứng dụng:** <br>&emsp; + Deploy ứng dụng kết nối tới RDS <br>&emsp; + Kiểm tra CRUD từ EC2 lên database                                                                                  | 15/10/2025   | 15/10/2025      | <https://000005.awsstudygroup.com/>        |
+| 4    | - **Workshop Lightsail – Phần 1:** <br>&emsp; + Deploy database trên Lightsail <br>&emsp; + Triển khai WordPress, Prestashop và Akaunting                                                               | 16/10/2025   | 16/10/2025      | <https://000045.awsstudygroup.com/>        |
+| 5    | - **Workshop Lightsail – Phần 2:** <br>&emsp; + Cấu hình bảo mật ứng dụng <br>&emsp; + Tạo snapshot <br>&emsp; + Scale lên instance mạnh hơn <br>&emsp; + Tạo alarm giám sát <br>&emsp; + Cleanup tài nguyên | 17/10/2025   | 17/10/2025      | <https://000045.awsstudygroup.com/>        |
 
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: "Worklog Tuần 10"
 date: "`r Sys.Date()`"
-weight: 2
+weight: 10
 chapter: false
-pre: " <b> 1.10. </b> "
+pre: " <b> 1.10 </b> "
 ---
 ### Mục tiêu tuần 10
 
@@ -16,13 +16,13 @@ pre: " <b> 1.10. </b> "
 
 ### Nhiệm vụ thực hiện trong tuần
 
-| Ngày | Nhiệm vụ | Bắt đầu | Hoàn thành | Tài liệu |
-| --- | -------- | -------- | ---------- | -------- |
-| 1 | - Giới thiệu AWS CLI <br> - Môi trường chạy CLI (Linux/macOS/Windows/Remote) <br> - Tìm hiểu CLI Profiles <br> - Cấu hình CLI bằng `aws configure` | 28/10/2025 | 28/10/2025 | https://000011.awsstudygroup.com/ |
-| 2 | - Cài đặt AWS CLI <br> - Xem tài nguyên AWS bằng CLI <br> - Làm việc với Amazon S3 bằng CLI (list, upload, download) | 29/10/2025 | 29/10/2025 | https://000011.awsstudygroup.com/ |
-| 3 | - AWS CLI với Amazon SNS (tạo topic, subscription, publish) <br> - AWS CLI với IAM (tạo user, list policies) <br> - AWS CLI với VPC (list VPCs, subnets, SGs) | 30/10/2025 | 30/10/2025 | https://000011.awsstudygroup.com/ |
-| 4 | - Tạo EC2 bằng AWS CLI <br> - Xử lý lỗi CLI <br> - Dọn dẹp tài nguyên CLI <br><br> **Bắt đầu Lab Route 53 Hybrid DNS:** <br> - Giới thiệu Hybrid DNS và Route 53 Resolver | 31/10/2025 | 31/10/2025 | https://000011.awsstudygroup.com/ <br> https://000010.awsstudygroup.com/ |
-| 5 | - Triển khai Microsoft AD trong lab <br> - Cấu hình Route 53 Resolver rules <br> - Tạo inbound & outbound endpoints <br> - Kiểm tra phân giải DNS giữa on-premises và AWS <br> - Clean up resources | 01/11/2025 | 01/11/2025 | https://000010.awsstudygroup.com/ |
+| Ngày | Nhiệm vụ | Bắt đầu     | Hoàn thành | Tài liệu |
+| --- | -------- |-------------| ---------- | -------- |
+| 1 | - Giới thiệu AWS CLI <br> - Môi trường chạy CLI (Linux/macOS/Windows/Remote) <br> - Tìm hiểu CLI Profiles <br> - Cấu hình CLI bằng `aws configure` | 10/11/2025  | 10/11/2025  | https://000011.awsstudygroup.com/ |
+| 2 | - Cài đặt AWS CLI <br> - Xem tài nguyên AWS bằng CLI <br> - Làm việc với Amazon S3 bằng CLI (list, upload, download) | 11/11/2025  | 11/11/2025 | https://000011.awsstudygroup.com/ |
+| 3 | - AWS CLI với Amazon SNS (tạo topic, subscription, publish) <br> - AWS CLI với IAM (tạo user, list policies) <br> - AWS CLI với VPC (list VPCs, subnets, SGs) | 12/11/2025  | 12/11/2025 | https://000011.awsstudygroup.com/ |
+| 4 | - Tạo EC2 bằng AWS CLI <br> - Xử lý lỗi CLI <br> - Dọn dẹp tài nguyên CLI <br><br> **Bắt đầu Lab Route 53 Hybrid DNS:** <br> - Giới thiệu Hybrid DNS và Route 53 Resolver | 13/11/2025  | 13/11/2025 | https://000011.awsstudygroup.com/ <br> https://000010.awsstudygroup.com/ |
+| 5 | - Triển khai Microsoft AD trong lab <br> - Cấu hình Route 53 Resolver rules <br> - Tạo inbound & outbound endpoints <br> - Kiểm tra phân giải DNS giữa on-premises và AWS <br> - Clean up resources | 14/11/2025  | 14/11/2025 | https://000010.awsstudygroup.com/ |
 
 ---
 

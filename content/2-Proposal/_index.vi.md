@@ -57,7 +57,7 @@ Academic Research Chatbot áp dụng mô hình AWS Hybrid RAG Architecture với
 
 Luồng xử lý dữ liệu và hội thoại
 
-![self picture](/images/FCJ-mvp.png)
+![architech](/images/2-Proposal/FCJ-MVP.png)
 
 **Dịch vụ AWS sử dụng**
 - **Frontend**: Route 53, CloudFront, Amplify (DNS, CDN, Host React App).
