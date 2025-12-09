@@ -5,55 +5,34 @@ weight: 1
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu Tuần 9:
 
-### Mục tiêu tuần 9:
+* Hiểu cách triển khai ứng dụng có khả năng mở rộng và chịu lỗi bằng Launch Template, Load Balancer và Auto Scaling Group.
+* Nắm rõ cơ chế tự động mở rộng (elasticity), phân phối tải và tính sẵn sàng cao.
+* Học cách giám sát hệ thống với CloudWatch Metrics, Logs, Alarms và Dashboards.
+* Áp dụng các best practices về quan sát hệ thống (observability) và giám sát ứng dụng.
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+---
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Các nhiệm vụ thực hiện trong tuần:
 
+| Ngày | Nhiệm vụ                                                                                                                                                                                                                                         | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo                         |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | ---------------- | ------------------------------------------ |
+| 1    | - Tìm hiểu kiến trúc Auto Scaling <br>&emsp; + Chuẩn bị IAM, security group, AMI và mạng                                                                                                                 | 10/21/2025   | 10/21/2025       | <https://000006.awsstudygroup.com/>        |
+| 2    | - **Thực hành Phần 1:** <br>&emsp; + Tạo Launch Template <br>&emsp; + Cấu hình user data, storage, instance settings                                                                                    | 10/22/2025   | 10/22/2025       | <https://000006.awsstudygroup.com/>        |
+| 3    | - **Thực hành Phần 2:** <br>&emsp; + Tạo Application Load Balancer <br>&emsp; + Tạo target group và kiểm tra hoạt động của ứng dụng                                                                      | 10/23/2025   | 10/23/2025       | <https://000006.awsstudygroup.com/>        |
+| 4    | - **Triển khai Auto Scaling Group:** <br>&emsp; + Tạo ASG và policy mở rộng <br>&emsp; + Kiểm thử scaling khi tải tăng/giảm                                                                              | 10/24/2025   | 10/24/2025       | <https://000006.awsstudygroup.com/>        |
+| 5    | - **Workshop CloudWatch:** <br>&emsp; + Tìm hiểu Metrics <br>&emsp; + Thu thập Logs <br>&emsp; + Tạo Alarms <br>&emsp; + Tạo Dashboards <br>&emsp; + Cleanup tài nguyên                                  | 10/25/2025   | 10/25/2025       | <https://000008.awsstudygroup.com/>        |
 
-### Kết quả đạt được tuần 9:
+---
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Thành tựu Tuần 9:
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hiểu rõ cách Auto Scaling Group, Load Balancer và Launch Template kết hợp để đảm bảo tính sẵn sàng và khả năng mở rộng.
+* Tạo thành công ASG và kiểm thử behavior của scaling policy.
+* Tạo và triển khai ALB, kiểm tra phân phối tải và tính sẵn sàng.
+* Thu thập và phân tích metrics & logs bằng CloudWatch.
+* Tạo các cảnh báo (alarms) theo dõi sức khỏe ứng dụng và tài nguyên.
+* Xây dựng dashboard trực quan để giám sát hệ thống.
+* Cleanup toàn bộ tài nguyên tạo ra trong workshop để tránh phát sinh chi phí.

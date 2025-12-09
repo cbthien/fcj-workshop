@@ -32,3 +32,24 @@ Tôi đã tham gia **Dự án chatbot cho học tập nội bộ**, qua đó c�
 * Học cách giao tiếp tốt hơn trong giao tiếp hằng ngày và trong công việc, xử lý tình huống
 * Nâng cao tính kỹ luật, chấp hành nghiêm chỉnh nội quy của công ty hoặc bất kỳ trong một tổ chức nào
 * Cải thiện trong cách tư duy giải quyết vấn đề
+
+### **Cơ hội phát triển**
+
+| Lĩnh vực | Nội dung cần cải thiện |
+|---------|--------------------------|
+| **Quản lý thời gian** | - Tối ưu việc cân bằng giữa học nhiều dịch vụ AWS và đào sâu từng chủ đề cụ thể.<br>- Cải thiện khả năng ước lượng thời gian cho các tác vụ triển khai phức tạp. |
+| **Giao tiếp kỹ thuật** | - Nâng cao khả năng giải thích kiến trúc phức tạp cho người không chuyên.<br>- Luyện tập trình bày các đánh đổi kỹ thuật ngắn gọn hơn trong các buổi họp giới hạn thời gian. |
+| **Chủ động phòng ngừa vấn đề** | - Tăng khả năng dự đoán lỗi tiềm ẩn trước khi xảy ra.<br>- Cải thiện quy trình kiểm tra trước triển khai để phát hiện lỗi cấu hình sớm hơn. |
+
+### **Mục tiêu phát triển tương lai**
+
+| Mục tiêu | Nội dung |
+|---------|-----------|
+| **AI/ML** | Mở rộng chuyên môn về SageMaker, Bedrock, Comprehend để phát triển chatbot nâng cao. |
+| **DevOps** | Tìm hiểu CI/CD pipelines, automated testing, giám sát hệ thống với CloudWatch và X-Ray. |
+| **Cộng đồng AWS** | Tham gia đóng góp dự án mã nguồn mở và chia sẻ kiến thức qua blog. |
+| **Kiến trúc nâng cao** | Khám phá multi-region architecture và chiến lược disaster recovery. |
+
+### **Kết luận**
+
+Kỳ thực tập 12 tuần tại **First Cloud Journey** đã cung cấp kinh nghiệm thực hành quý báu với AWS và phát triển dự án thực tế. Tôi đã chuyển đổi từ người mới bắt đầu thành người có khả năng thiết kế và triển khai các giải pháp đám mây sẵn sàng cho sản xuất. Đây sẽ là nền tảng quan trọng cho sự nghiệp điện toán đám mây của tôi.

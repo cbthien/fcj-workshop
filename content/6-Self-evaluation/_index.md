@@ -31,3 +31,23 @@ To objectively reflect on my internship experience, I hereby provide my self-eva
 * Strengthen discipline and strictly follow the policies and regulations of the company or any organization.
 * Improve problem-solving thinking and analytical approaches.
 
+### **Areas for Improvement**
+
+| Category | Improvement Opportunities |
+|----------|----------------------------|
+| **Time Management** | - Optimize balancing between learning multiple AWS services and diving deeper into specific topics.<br>- Improve time estimation for complex deployment tasks. |
+| **Technical Communication** | - Enhance ability to explain complex architectures verbally to non-technical audiences.<br>- Practice presenting technical trade-offs more concisely during time-limited meetings. |
+| **Proactive Issue Prevention** | - Strengthen the ability to anticipate potential issues before they occur.<br>- Improve pre-deployment checks to detect configuration errors earlier. |
+
+### **Future Development Goals**
+
+| Goal Area | Description |
+|-----------|-------------|
+| **AI/ML** | Expand expertise in SageMaker, Bedrock, and Comprehend to build advanced chatbot capabilities. |
+| **DevOps** | Learn CI/CD pipelines, automated testing, and observability with CloudWatch and X-Ray. |
+| **AWS Community** | Contribute to open-source AWS projects and share knowledge through technical blogs. |
+| **Advanced Architecture** | Explore multi-region architectures and disaster recovery strategies. |
+
+### **Conclusion**
+
+The 12-week internship at **First Cloud Journey** provided invaluable hands-on experience with AWS and real-world project development. I have progressed from a beginner to someone capable of designing and deploying production-ready cloud solutions. These achievements form a solid foundation for my future career in cloud computing.

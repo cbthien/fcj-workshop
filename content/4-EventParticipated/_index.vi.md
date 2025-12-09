@@ -6,41 +6,38 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-> Trong phần này, các bạn cần liệt kê và mô tả chi tiết các sự kiện (event) mà mình đã tham gia trong suốt quá trình thực tập hoặc làm việc. 
-> 
-> Mỗi sự kiện nên được trình bày theo định dạng Event 1, Event 2, Event 3…, kèm theo các thông tin:
-> * Tên sự kiện
-> * Thời gian tổ chức
-> * Địa điểm (nếu có)
-> * Vai trò của bạn trong sự kiện (người tham dự, hỗ trợ tổ chức, diễn giả, v.v.)
-> * Mô tả ngắn gọn nội dung và hoạt động chính trong sự kiện
-> * Kết quả hoặc giá trị đạt được (bài học, kỹ năng mới, đóng góp cho nhóm/dự án)
-> * Việc liệt kê này giúp thể hiện rõ sự tham gia thực tế của bạn, cũng như các kỹ năng mềm và kinh nghiệm bạn đã tích lũy qua từng sự kiện.
-
-
-Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là một trải nghiệm đáng nhớ với những kiến thức mới, hay và bổ ích, cùng với đó là nhứng món quà và những khoảnh khắc rất tuyệt vời.
-
 ### [Event 1](4.1-Event1/)
-&emsp;**Tên sự kiện:** GenAI-powered App-DB Modernization workshop
 
-&emsp;**Thời gian:** 09:00 ngày 13/08/2025
+&emsp;**Tên sự kiện:** AWS Cloud Mastery Series #1 workshop (AI/ML/GenAI)
 
-&emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
+&emsp;**Thời gian:** 15/11/2025
 
-&emsp;**Vai trò trong sự kiện:** Người tham dự 
+&emsp;**Địa điểm:** Bitexco Financial Tower, 26th Floor, 2 Hải Triều, Quận 1, TP.HCM
 
+&emsp;**Vai trò trong sự kiện:** Người tham dự
 
+&emsp;**Nội dung chính:** Amazon SageMaker, Generative AI with Amazon Bedrock, Bedrock Agents, MLOps, CI/CD workflow for containers
 
 ### [Event 2](4.2-Event2/)
-&emsp;**Tên sự kiện:** GenAI-powered App-DB Modernization workshop
 
-&emsp;**Thời gian:** 09:00 ngày 13/08/2025
+&emsp;**Tên sự kiện:** AWS Cloud Mastery Series #2 workshop (DevOps)
 
-&emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
+&emsp;**Thời gian:** 17/11/2025
 
-&emsp;**Vai trò trong sự kiện:** Người tham dự 
+&emsp;**Địa điểm:** Bitexco Financial Tower, 26th Floor, 2 Hải Triều, Quận 1, TP.HCM
 
+&emsp;**Vai trò trong sự kiện:** Người tham dự
+
+&emsp;**Nội dung chính:** Tư duy DevOps hiện đại, CI/CD Pipeline, Infrastructure as Code (IaC), Container Services (ECS/EKS/App Runner), Monitoring & Observability
+
+### [Event 3](4.3-Event3/)
+
+&emsp;**Tên sự kiện:** AWS Cloud Mastery Series #3 workshop (Security Pillar)
+
+&emsp;**Thời gian:** 29/11/2025
+
+&emsp;**Địa điểm:** Bitexco Financial Tower, 26th Floor, 2 Hải Triều, Quận 1, TP.HCM
+
+&emsp;**Vai trò trong sự kiện:** Người tham dự
+
+&emsp;**Nội dung chính:** AWS Well-Architected Framework – Security Pillar, IAM, Detection & Monitoring, Infrastructure Protection, Data Protection, Incident Response

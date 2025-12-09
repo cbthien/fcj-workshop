@@ -6,120 +6,156 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+# Bài thu hoạch “AWS Cloud Mastery Series #1 workshop”
 
 ### Mục Đích Của Sự Kiện
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+Giới thiệu hệ sinh thái AI/ML/GenAI trên AWS.
 
+Hướng dẫn triển khai ML end-to-end bằng SageMaker.
+
+Xây dựng ứng dụng Generative AI qua Amazon Bedrock, RAG, Agents.
+
+Làm quen với MLOps, IaC, CICD, container workflows phục vụ AI/ML.
+
+Xây dựng tư duy vận hành AI ở môi trường doanh nghiệp.
 ### Danh Sách Diễn Giả
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+- **AWS AI/ML Specialist Team** – AWS Vietnam
+- **AWS Solutions Architect**
+- **AI/ML Community Leader in Vietnam**
 
 ### Nội Dung Nổi Bật
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### AWS AI/ML Services Overview
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+- **Amazon SageMaker** — nền tảng ML end-to-end
+    - Data preparation: **SageMaker Data Wrangler**, **Ground Truth** (data labeling), **Feature Store** (quản lý feature tái sử dụng)
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+- **Training & Tuning**
+    - Training jobs → autoscaling GPU/CPU
+    - Hỗ trợ distributed training
+    - Hyperparameter tuning (Auto-tuning, Bayesian Optimization)
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+- **Deployment Options**
+    - Real-time endpoint
+    - Serverless inference
+    - Multi-model endpoint
+    - Asynchronous (async) inference
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+- **MLOps**
+    - Model registry
+    - CI/CD pipelines bằng **SageMaker Pipelines**
+    - Monitoring drift: data drift, feature drift, model drift
 
-#### Domain-Driven Design (DDD)
+- **Live demo**
+    - Trải nghiệm **SageMaker Studio**: notebook, xử lý dữ liệu, chạy training và deploy model.
+#### Generative AI with Amazon Bedrock
+#### Generative AI with Amazon Bedrock
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+- **Foundation models introduced**
+    - **Claude 3.5** — strong reasoning, long context, good for coding tasks
+    - **Llama 3** — open-weight, suitable for fine-tuning, cost-effective
+    - **Titan** — high-quality embeddings for RAG (retrieval-augmented generation)
+    - **Mistral** — fast, lightweight
 
-#### Event-Driven Architecture
+- **Prompt engineering techniques**
+    - Zero-shot, few-shot
+    - Chain-of-Thought
+    - Role prompting
+    - Multi-step reasoning
+    - Prompt templates
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+- **Best practices**
+    - Chunking hợp lý (chunking inputs appropriately)
+    - Metadata filtering
+    - Re-ranking
+    - Apply guardrails to ensure safety and control
 
-#### Compute Evolution
+#### Bedrock Agents
 
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
+- Agents có thể tự thực thi workflow multi-step.
+- Kích hoạt `Lambda` để gọi API, database và các workflow bên ngoài.
+- Có thể thay thế logic backend trong nhiều use case (orchestration của business logic).
+- Kết hợp chặt chẽ với `EventBridge` và `Step Functions` trong pipeline AI để điều phối và retry.
 
-#### Amazon Q Developer
+#### CICD Workflow for Containers (ECR + ECS)
 
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+1. Developer commit → `CodeCommit`
+2. `CodeBuild` builds the image
+3. Push image vào `ECR`
+4. `ECS` pull image để deploy (Fargate / EC2)
+5. `CloudWatch` giám sát logs & metrics
+6. `CodePipeline` orchestrate toàn bộ quy trình
+
+Add security (DevSecOps):
+
+- `CodeBuild` validation (unit tests, static analysis)
+- Image scanning trong `ECR` (vulnerability scan)
+- Deployment policies / IAM controls để kiểm soát việc deploy
+
+→ Đây là DevSecOps chuẩn AWS.
 
 ### Những Gì Học Được
 
-#### Tư Duy Thiết Kế
+#### Kiến thức AI/ML nền tảng, GenAI
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+- ML lifecycle
+- Feature engineering
+- Model deployment & monitoring
+- Cost optimization cho training/inference
+- Cách chọn Foundation Model phù hợp với use case
+- Prompt engineering nâng cao
+- RAG architecture cho production (retrieval-augmented generation)
+- Build Agents để thực thi workflow tự động
 
-#### Kiến Trúc Kỹ Thuật
+#### Kiến Trúc Kỹ Thuật Quan Trọng
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
+#### Kiến Trúc Kỹ Thuật Quan Trọng
 
-#### Chiến Lược Hiện Đại Hóa
-
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+- **IaC (Infrastructure as Code):** `Terraform` vs `CloudFormation` vs `CDK`
+- **Container inference workflow:** `ECS` / `ECR` cho AI inference container
+- **Monitoring & Observability:** giám sát AI workloads với `CloudWatch` + `X-Ray`
 
 ### Ứng Dụng Vào Công Việc
 
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+- Build chatbot doanh nghiệp với `Bedrock` + RAG (retrieval-augmented generation)
+- Thiết kế kiến trúc AI end-to-end (data → ML → app)
+- Dùng `Lambda` + `Step Functions` để điều phối RAG pipeline
+- Dùng `Terraform` / `CDK` để xây hạ tầng GenAI
+- Triển khai inference container qua `ECS` / `Fargate`
 
 ### Trải nghiệm trong event
 
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
+- Tham gia workshop **“AWS Cloud Mastery Series #1”** tôi thấy rõ cách AWS triển khai AI/ML real-world, hiểu sự khác nhau ML truyền thống và GenAI, tăng tư duy thiết kế AI architecture.
 
 #### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
 
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
+- Hiểu chi tiết cách AWS xây dựng hệ sinh thái AI/ML/GenAI toàn diện.
+
 
 #### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
 
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
+- **SageMaker** — `SageMaker` giúp làm ML end-to-end: chuẩn bị dữ liệu, training, tuning, deployment và MLOps.
+- **Bedrock** — cung cấp Foundation Models (`Claude`, `Llama`, `Titan`) và hỗ trợ RAG + Agents để xây chatbot và workflow AI nhanh.
+- **IaC & DevOps** — `CloudFormation`, `CDK`, `Terraform`, `CodePipeline` giúp triển khai AI/ML có kiểm soát và tự động.
+- **Data & ETL Tools** — `Glue`, `S3` (Data Lake), `EventBridge`, `Step Functions` hỗ trợ pipeline dữ liệu cho AI.
+- **Monitoring** — `CloudWatch` cho giám sát AI/ML, logging và drift detection.
+
+#### Kết nối và tư duy
+
+- Học tư duy AI system thay vì chỉ làm mô hình ML riêng lẻ.
+- Nắm xu hướng AI/ML tại Việt Nam và cách doanh nghiệp ứng dụng.
 
 #### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
+
+- GenAI và ML truyền thống kết hợp để tạo giải pháp AI mạnh trong thực tế.
+
+- GenAI và ML truyền thống kết hợp để tạo giải pháp AI mạnh trong thực tế.
+- `Bedrock` là nền tảng GenAI doanh nghiệp: an toàn, triển khai nhanh, không cần tự train model.
+- `MLOps` + `IaC` là bắt buộc để AI chạy production ổn định.
+- `RAG` là cách “đưa kiến thức doanh nghiệp vào mô hình” hiệu quả nhất.
 
 #### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+![Sự kiện](/images/4-EventParticipated/15.11-event.jpg)
+> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn mang đến cho tôi tư duy thiết kế hệ thống AI/ML toàn diện, từ data đến deployment và vận hành, giúp tôi tự tin hơn trong việc xây dựng các giải pháp AI thực tế cho doanh nghiệp.
